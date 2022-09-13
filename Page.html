@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, target-densitydpi=device-dpi" />
+  <link rel="stylesheet" href="css.css">
+  <title>Barraille Lucas</title>
+  <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+  <script src="jquery.fullpage.js"></script>
+  <script src="jquery.pagepiling.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&amp;display=swap" rel="stylesheet">
+  <link rel="icon" href="img/LogoAninet.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Russo+One&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar">
+    <ul class="navbar-menu">
+      <li class="navbar-item logo">
+        <a href="#" class="navbar-link">
+          <span class="navbar-title">Curriculum vitae</span>
+          <img class="fas fa-user navbar-icon" src="img/angle-right-solid.svg" Title="Format Pdf" />
+        </a>
+      </li>
+      <li class="navbar-item">
+        <a href="#Home" class="navbar-link">
+          <img class="fas fa-user navbar-icon" src="img/house-solid.svg" Title="Format Pdf" />
+          <span class="navbar-title">Menu</span>
+        </a>
+      </li>
+      <li class="navbar-item">
+        <a href="#Qualification" class="navbar-link">
+          <img class="fas fa-user navbar-icon" src="img/user-check-solid.svg" Title="Format Pdf" />
+          <span class="navbar-title">Qualification</span>
+        </a>
+      </li>
+      <li class="navbar-item">
+        <a onclick="$.fn.pagePiling.moveTo('#Proficiency');" class="navbar-link">
+          <img class="fas fa-user navbar-icon" src="img/circle-check-solid.svg" Title="Format Pdf" />
+          <span class="navbar-title">Proficiency</span>
+        </a>
+      </li>
+      <li class="navbar-item">
+        <a href="#Pro_Exp" class="navbar-link">
+          <img class="fas fa-user navbar-icon" src="img/user-tie-solid.svg" Title="Format Pdf" />
+          <span class="navbar-title">Exp.Pro</span>
+        </a>
+      </li>
+      <li class="navbar-item">
+        <a href="#XP_Pro" class="navbar-link">
+          <img class="fas fa-user navbar-icon" src="img/user-tie-solid.svg" Title="Format Pdf" />
+          <span class="navbar-title">Xp.Pro</span>
+        </a>
+      </li>
+      <li class="navbar-item">
+        <a href="#Perso_Exp" class="navbar-link">
+          <img class="fas fa-user navbar-icon" src="img/feather-solid.svg" Title="Format Pdf" />
+          <span class="navbar-title">Exp.Perso</span>
+        </a>
+      </li>
+
+      </br>
+      </br>
+      <li class="navbar-item_2">
+        <a href="img/CV_Lucas.pdf" target="_new" class="navbar-link">
+          <img class="fas fa-user navbar-icon" src="img/Logo_Pdf.svg" Title="Format Pdf" />
+          <span class="navbar-title">PDF</span></a></li>
+      <li class="navbar-item_2">
+        <a href="https://twitter.com/AnityNet" target="_new" class="navbar-link">
+          <img class="fas fa-user navbar-icon" src="img/Logo_Twitter.svg" Title="Twitter AniNet" />
+          <span class="navbar-title">Twitter</span></a></li>
+      <li class="navbar-item_2">
+        <a href="https://aninet.io/" target="_new" class="navbar-link">
+          <img class="fas fa-user navbar-icon" src="img/Logo_Aninet.svg" Title="WebSite Aninet" />
+          <span class="navbar-title">AniNet</span></a></li>
+      <li class="navbar-item_2">
+        <a href="mailto:contact@aninet.io" target="_new" class="navbar-link">
+          <img class="fas fa-user navbar-icon" src="img/envelope-solid.svg" Title="Mail Aninet" />
+          <span class="navbar-title">Contact</span></a></li>
+    </ul>
+  </nav>
+
+  <div id="fullpage">
+
+
+    <section id="Home">
+      <div class="D_Home">
+        <div class="Home_D1">Barraillé Lucas</div>
+        <div class="Home_D2">23 years</div>
+        <div class="Home_D3">
+          <div class="Home_D3_D1"><img src="img/Logo_Menu.svg" /></div>
+          <div class="Home_D3_D2">IT entrepreneur and consultant</div>
+        </div>
+        <div class="Home_D4">System and Network Admin - Web Designer</div>
+        <div class="Quali_D3">
+          <div class="Quali_D3_D1">Anglais</div>
+          <div class="Quali_D3_D1">Technique</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="Qualification">
+      <div class="D_Quali">
+        <div class="Quali_D1">Qualification</div>
+        <div class="Quali_D2">2014-2017 : Bac Professionnelle Système, Électronique et Numérique.</div>
+      </div>
+    </section>
+
+    <section id="Proficiency">
+      <div class="D_Profi">
+        <div class="Quali_D1">Proficiency</div>
+        <div class="Profi_D1">
+          <div><span id="D2_Pourcen">20%</span> <span id="D2_Vin"> : J'ai quelques connaissances</span></div>
+          <div><span id="D2_Pourcen">40%</span> <span id="D2_Qua"> : Je sais faire mais j'ai encore besoin
+              d'accompagnement</span></div>
+          <div><span id="D2_Pourcen">60%</span> <span id="D2_Soi"> : Bon niveau</span></div>
+          <div><span id="D2_Pourcen">80%</span> <span id="D2_Qv"> : Trés bon niveau / maîtrise du sujet</span></div>
+          <div><span id="D2_Pourcen">100%</span> <span id="D2_Cent"> : Je suis expert</span></div>
+        </div>
+        <div class="Profi_D2">
+          <div class="ser">
+            <p class="ta">Programmation</p>
+            <div class="progressbar-wrapper">
+              <div class="p1">
+                <p>40%</p>
+              </div>
+            </div>
+          </div>
+          <div class="ser">
+            <p class="ta">Web</p>
+            <div class="progressbar-wrapper">
+              <div class="p2">
+                <p>40%</p>
+              </div>
+            </div>
+          </div>
+          <div class="ser">
+            <p class="ta">Web dynamique</p>
+            <div class="progressbar-wrapper">
+              <div class="p3">
+                <p>40%</p>
+              </div>
+            </div>
+          </div>
+          <div class="ser">
+            <p class="ta">Base de données</p>
+            <div class="progressbar-wrapper">
+              <div class="p4">
+                <p>40%</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="ser">
+            <p class="ta">Registres distribués</p>
+            <div class="progressbar-wrapper">
+              <div class="p6">
+                <p>40%</p>
+              </div>
+            </div>
+          </div>
+          <div class="ser">
+            <p class="ta">Technologie de sécurité</p>
+            <div class="progressbar-wrapper">
+              <div class="p8">
+                <p>40%</p>
+              </div>
+            </div>
+          </div>
+          <div class="ser">
+            <p class="ta">Système d'exploitation</p>
+            <div class="progressbar-wrapper">
+              <div class="p7">
+                <p>60%</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="ser">
+            <p class="ta">Equipements réseaux</p>
+            <div class="progressbar-wrapper">
+              <div class="p9">
+                <p>60%</p>
+              </div>
+            </div>
+          </div>
+          <div class="ser">
+            <p class="ta">Protocoles Réseaux</p>
+            <div class="progressbar-wrapper">
+              <div class="p10">
+                <p>80%</p>
+              </div>
+            </div>
+          </div>
+          <div class="ser">
+            <p class="ta">Support Télécom</p>
+            <div class="progressbar-wrapper">
+              <div class="p5">
+                <p>100%</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="Pro_Exp">
+      <div class="D_Pro">
+        <div class="Quali_D1">Exp.Pro</div>
+        <div class="Pro_C1">
+          <div class="Pro_D2">
+
+            <div id="Pro_Title" class="Pro_D2_D1">3ème Expérience Professionnelle - Etude Réseau</div>
+
+            <div id="Pro_Table" class="Pro_D2_D2">
+              <table align="center">
+                <tr>
+                  <td>Date de début</td>
+                  <td>janvier 2020</td>
+                </tr>
+                <tr>
+                  <td>Durée de l'expérience</td>
+                  <td>2 ans et 8 mois</td>
+                </tr>
+                <tr>
+                  <td>Auto-Entrepreneur</td>
+                  <td>Celad - INFOMIL</td>
+                </tr>
+                <tr>
+                  <td>Service</td>
+                  <td>Etude Réseau et Télécom</td>
+                </tr>
+              </table>
+            </div>
+
+            <div class="Pro_D2_D3">
+              <div id="Pro_Title_M" class="Pro_D2_D3_D1">Mission :</div>
+              <div id="Pro_Text">
+                Suivie, plannification et gestion des liens télécoms du mouvement leclerc (hyper/super/drive/centrale).
+              </div>
+            </div>
+          </div>
+
+          <div class="Pro_D3">
+
+            <div id="Pro_Title" class="Pro_D3_D1">2ème Expérience Professionnelle - Déploiement réseau.</div>
+
+            <div id="Pro_Table" class="Pro_D3_D2">
+              <table align="center">
+                <tr>
+                  <td>Date de début</td>
+                  <td>Février 2018</td>
+                </tr>
+                <tr>
+                  <td>Durée de l'expérience</td>
+                  <td>2 ans</td>
+                </tr>
+                <tr>
+                  <td>CDD</td>
+                  <td>Celad - INFOMIL</td>
+                </tr>
+                <tr>
+                  <td>Service</td>
+                  <td>Déploiement</td>
+                </tr>
+              </table>
+            </div>
+
+            <div class="Pro_D3_D3">
+              <div id="Pro_Title_M" class="Pro_D3_D3_D1">Mission :</div>
+              <div id="Pro_Text">
+                Projet Spécifique Infomil (à la demande des centrales Leclerc).</br>
+                Déploiement national des magasins avec la mise en place d'une Architecture réseau décentralisé</br>
+                Une meilleure gestion entre magasins et centrales (communication/approvisionnement/fournisseur).
+              </div>
+            </div>
+          </div>
+
+          <div class="Pro_D4">
+
+            <div id="Pro_Title" class="Pro_D4_D1">1er Expérience Professionnelle - Equipier</div>
+
+            <div id="Pro_Table" class="Pro_D4_D2">
+              <table align="center">
+                <tr>
+                  <td>Date de début</td>
+                  <td>Septembre 2017</td>
+                </tr>
+                <tr>
+                  <td>Durée de l'expérience</td>
+                  <td>8 mois</td>
+                </tr>
+                <tr>
+                  <td>CDI</td>
+                  <td>MCDONALD</td>
+                </tr>
+                <tr>
+                  <td>Service</td>
+                  <td>Equipier</td>
+                </tr>
+              </table>
+            </div>
+
+            <div class="Pro_D4_D3">
+              <div id="Pro_Title_M" class="Pro_D4_D3_D1">Mission :</div>
+              <div id="Pro_Text">
+                Equipier McDonald's (préparation et prise de commande, fabrication des différents sandwich</br>
+                et aliment du restaurant, l'entretiens des stocks et de la propreté du restaurant.
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="XP_Pro">
+      <div class="D_Xp">
+        <div class="Quali_D1">Xp.Pro</div>
+        <div class="Xp_D1">
+          <div class="Pro_D2_D5">
+            <div class="Xp_D2_D5_D1">Environnement technique 3ème Mission :</div>
+            <div id="Pro_Text">
+              Office et système d'exploitation (Windows Server)</br>
+              Utilisation Outil de supervision des équipements réseaux (spécifique à Infomil)</br>
+              Cisco / Huawei / Juniper</br>
+            </div>
+          </div>
+          <div class="Pro_D2_D4">
+            <div id="Xp_Title" class="Xp_D2_D4_D1">Détail des réalisations :</div>
+            <div id="Pro_Text">
+              Intermédiaire et fournisseur des magasins leclerc (Equipe Télécom Infomil)</br>
+              Prise de contact et plannification avec les opérateurs (Commande de lien pour les magasins)</br>
+              Installation et configuration d'équipement routeur "l'opérateur/Infomil/client(Leclerc)"</br>
+            </div>
+          </div>
+        </div>
+
+        <div class="Xp_D2">
+          <div class="Pro_D3_D5">
+            <div class="Xp_D3_D5_D1">Environnement technique 2ème Mission :</div>
+            <div id="Pro_Text">
+              Office et système d'exploitation</br>
+              Cisco / Huawei / Juniper / Dell
+            </div>
+          </div>
+
+          <div class="Pro_D3_D4">
+            <div id="Xp_Title" class="Xp_D3_D4_D1">Détail des réalisations :</div>
+            <div id="Pro_Text">
+              Mise en place de Cœur de réseau (Cluster Firewall) avec DMZ / configuration des équipements.</br>
+              Mise en place du Wifi Magasin (Réseau Public gratuit et Privé) pour les employés et client</br>
+              Suivi des dossiers et gestion des interlocuteurs (technicien/magasin/opérateur).</br>
+              Prise de contact et plannification avec les opérateurs / Lien principal et secours installé dans chaque
+              Leclerc</br>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="Perso_Exp">
+
+      <div class="D_Perso">
+        <div class="Quali_D1">Exp.Perso</div>
+        <div class="Perso_D2">
+          <div class="Perso_D2_D">
+            <div class="Perso_Tableau">Depuis moins 1 ans</div>
+            <div class="Perso_C1">JS</div>
+            <div class="Perso_C1">Php</div>
+            <div class="Perso_C1">C/C++</div>
+          </div>
+          <div class="Perso_D2_D">
+            <div class="Perso_Tableau">Depuis 1 ans</div>
+            <div class="Perso_C1">Python</div>
+            <div class="Perso_C1">HTML/CSS</div>
+          </div>
+          <div class="Perso_D2_D">
+            <div class="Perso_Tableau">Depuis 2 ans</div>
+            <div class="Perso_C1">Enjeux futurs de la blockchain: Modèle Blockchain</div>
+            <div class="Perso_C1">Crypto-monnaie</div>
+          </div>
+          <div class="Perso_D2_D">
+            <div class="Perso_Tableau">Depuis 3 ans et plus</div>
+            <div class="Perso_C1">Système et réseau : Linux/Window/MacOs</div>
+            <div class="Perso_C1">Protocole Réseau</div>
+
+          </div>
+        </div>
+
+
+        <div class="Perso_D3">
+          <div class="Perso_D3_D1">Annexe</div>
+          <div class="Perso_D3_D2">Document technique et de recherche d'information sur les enjeux futurs de la
+            blockchain (doc disponible).</div>
+        </div>
+
+      </div>
+
+    </section>
+  </div>
+
+
+  <script type="text/javascript">
+    $('#fullpage').fullpage();
+  </script>
+
+</body>
+
+</html>
