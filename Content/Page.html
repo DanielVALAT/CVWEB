@@ -6,9 +6,7 @@
   <meta name="viewport" content="width=device-width, target-densitydpi=device-dpi" />
   <link rel="stylesheet" href="css.css">
   <title>Barraille Lucas</title>
-  <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
-  <script src="jquery.fullpage.js"></script>
-  <script src="jquery.pagepiling.js"></script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&amp;display=swap" rel="stylesheet">
   <link rel="icon" href="img/LogoAninet.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -39,7 +37,7 @@
         </a>
       </li>
       <li class="navbar-item">
-        <a onclick="$.fn.pagePiling.moveTo('#Proficiency');" class="navbar-link">
+        <a href="#Proficiency" class="navbar-link">
           <img class="fas fa-user navbar-icon" src="img/circle-check-solid.svg" Title="Format Pdf" />
           <span class="navbar-title">Proficiency</span>
         </a>
@@ -84,9 +82,7 @@
     </ul>
   </nav>
 
-  <div id="fullpage">
-
-
+  <div>
     <section id="Home">
       <div class="D_Home">
         <div class="Home_D1">Barraillé Lucas</div>
@@ -387,7 +383,7 @@
           </div>
           <div class="Perso_D2_D">
             <div class="Perso_Tableau">Depuis 3 ans et plus</div>
-            <div class="Perso_C1">Système et réseau : Linux/Window/MacOs</div>
+            <div class="Perso_C1">Système et réseau : Linux/Window/</br>MacOs</div>
             <div class="Perso_C1">Protocole Réseau</div>
 
           </div>
@@ -402,14 +398,30 @@
 
       </div>
 
+ 
+    
+
     </section>
+    <div id="scrollUp">
+      <a href="#top"><img src="/Content/img/up_buttom.svg"/></a>
+    </div>
+    
   </div>
 
+  <script>
+    jQuery(function(){
+        $(function () {
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 200 ) { 
+                    $('#scrollUp').css('right','10px');
+                } else { 
+                    $('#scrollUp').removeAttr( 'style' );
+                }
 
-  <script type="text/javascript">
-    $('#fullpage').fullpage();
+            });
+        });
+    });
   </script>
-
 </body>
 
 </html>

@@ -139,12 +139,29 @@
   section{
     display: flex;
     justify-content: center;
+    margin: 5%;
     margin-left: 6%;
     margin-right: 2%;
+    height: 100vh;
+  }
+
+
+  #scrollUp
+  {
+  position: fixed;
+  bottom : 10px;
+  right: -100px;
+  opacity: 0.5;
+  }
+
+  #scrollUp img{
+    height: 50px;
+    width: 50px;
   }
 
   #Home{align-items: center; }
   #Proficiency{align-items: center;}
+  #Qualification{align-items: center;}
   #Pro_Exp{align-items: center;}
   #XP_Pro{align-items: center;}
 
@@ -153,18 +170,19 @@
     background: var(--pal4-background-color);
     font-size: 22px;
     border-radius: 20px;
-    padding: 30vh 50vh 30vh 50vh;
+    padding: 20vh 50vh 20vh 50vh;
     border: 2px solid var(--pal2-background-color);
+    align-items: center;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
   }
   
   .D_Quali{
     margin: 1%;
     font-size: 22px;
     border-radius: 20px;
-    padding-top: auto;
-    padding-bottom: auto;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 1vh 50vh 70vh 50vh;
     border: 2px solid var(--pal2-background-color);
     background: var(--pal4-background-color);
   }
@@ -173,12 +191,8 @@
     margin: 1%;
     font-size: 22px;
     border-radius: 20px;
-    padding-top: auto;
-    padding-bottom: auto;
-    padding-left: 10px;
-    padding-right: 10px;
     background: var(--pal4-background-color);
-    padding: 20px 20px 20px 20px;
+    padding: 1vh 15vh 15vh 15vh;
     border: 2px solid var(--pal2-background-color); 
   }
 
@@ -186,10 +200,7 @@
     margin: 1%;
     font-size: 22px;
     border-radius: 20px;
-    padding-top: 10vh;
-    padding-bottom: 10vh;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 1vh 15vh 20vh 15vh;
     border: 2px solid var(--pal2-background-color);
     background: var(--pal4-background-color);
   }
@@ -198,10 +209,7 @@
     margin: 1%;
     font-size: 22px;
     border-radius: 20px;
-    padding-top: auto;
-    padding-bottom: auto;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 1vh 15vh 5vh 15vh;
     border: 2px solid var(--pal2-background-color);
     background: var(--pal4-background-color);
   }
@@ -210,19 +218,9 @@
     margin: 1%;
     font-size: 22px;
     border-radius: 20px;
-    padding-top: auto;
-    padding-bottom: auto;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 1vh 15vh 20vh 15vh;
     border: 2px solid var(--pal2-background-color);
     background: var(--pal4-background-color);
-  }
-
-  .D_Home{
-    align-items: center;
-    font-size: 30px;
-    display: flex;
-    flex-direction: column;
   }
 
   .Home_D1{
@@ -464,7 +462,7 @@
 
   .Perso_Tableau{
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     padding: 10px;
     color: rgb(0, 0, 0);
   }
@@ -475,7 +473,7 @@
     padding: 2px 2px 20% 2px;
     margin-left: 5px;
     border-radius: 10px;
-    min-width: 400px;
+    min-width: 150px;
     max-width: 400px;
     background-color:  var(--pal3-background-color);
   }
@@ -627,20 +625,104 @@
 
 }
 
+@media only screen and (max-width:2500px){
+
+  
+}
+
+@media only screen and (max-width:1910px){
+
+  
+}
 
 @media only screen and (max-width:1024px){
   
-  #Home, #Qualification, #Proficiency, #Pro_Exp, #Perso_Exp, #XP_Pro{
+  section{
     margin-left: 0%;
-    min-height: 60vh;
+    margin-right: 0%;
+    height: 80vh;
+    width: 100%;
+    border: 2px solid var(--pal2-background-color);
   }
 
   #Home{
     margin-top: 10%;
   }
+
+  .D_Home{
+    padding: 1vh 10vh 4vh 10vh;
+    font-size: 22px;
+  }
+  
+  .D_Quali{
+    padding: 1vh 10vh 4vh 10vh;
+  }
+
+  .D_Profi{
+    margin: 1%;
+    font-size: 15px;
+    border-radius: 20px;
+    background: var(--pal4-background-color);
+    padding: 1vh 10vh 4vh 10vh;
+    border: 2px solid var(--pal2-background-color); 
+  }
+
+  .D_Pro{
+    margin: 1%;
+    font-size: 10px;
+    border-radius: 20px;
+    padding: 1vh 0vh 0vh 2vh;
+    max-width: 100;
+    border: 2px solid var(--pal2-background-color);
+    background: var(--pal4-background-color);
+  }
+
+  .D_Perso{
+    margin-bottom: 2%;
+    margin-top: 10%;
+    font-size: 15px;
+    border-radius: 20px;
+    padding: 1vh 1vh 2vh 1vh;
+    border: 2px solid var(--pal2-background-color);
+    background: var(--pal4-background-color);
+  }
+
+  .D_Xp{
+    margin: 1%;
+    font-size: 22px;
+    border-radius: 20px;
+    padding: 1vh 10vh 4vh 10vh;
+    border: 2px solid var(--pal2-background-color);
+    background: var(--pal4-background-color);
+  }
+
   main{
     margin-bottom:5rem;
   }
+
+  .Perso_Tableau{
+    font-size: 12px
+  }
+
+  .Perso_C1{
+    font-size: 13px;
+  }
+
+  .Perso_D3{
+    margin-top: 10%;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
 
   .navbar{
     bottom:auto;
