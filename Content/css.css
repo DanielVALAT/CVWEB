@@ -1,4 +1,18 @@
-:root{
+  /* 
+  
+  CSS CVWEBLUCAS_
+
+  ©Copyright  2022  lucas.lab.barraille.fr
+  
+  */
+
+  /* 
+
+  START_ROOT
+ 
+ */
+
+  :root{
     --pal1-background-color: #47403B;
     --pal2-background-color: #8B827D;
     --pal3-background-color: #BEBAB3;
@@ -37,14 +51,30 @@
     height: 100%;
   }
 
-  #fullpage{
+  
+  section{
+    display: flex;
+    justify-content: center;
+    margin: 5%;
+    margin-left: 6%;
+    margin-right: 2%;
     height: 100vh;
-    overflow: hidden;
+    align-items: center;
   }
 
-  #fullpage section{
-    height: 100vh;
-  }
+
+  /* 
+
+  END_ROOT
+ 
+ */
+
+
+  /* 
+  
+  START_NAVBAR
+  
+  */
 
   .navbar{
     width:5rem;
@@ -121,8 +151,8 @@
   .navbar:not(:hover) .navbar-title{
     display:none;
   }
-  
-  .logo {
+
+  .logo{
     background:var(--navbar-logo-background-color);
   }
   
@@ -135,35 +165,24 @@
   .navbar:hover .logo .navbar-icon{
     transform:rotate(180deg);
   }
+
+  /* 
   
-  section{
-    display: flex;
-    justify-content: center;
-    margin: 5%;
-    margin-left: 6%;
-    margin-right: 2%;
-    height: 100vh;
-  }
+  END_NAVBAR
+  
+  */
 
+  /* 
+  
+                        START_BODY
+  
+  */
 
-  #scrollUp
-  {
-  position: fixed;
-  bottom : 10px;
-  right: -100px;
-  opacity: 0.5;
-  }
-
-  #scrollUp img{
-    height: 50px;
-    width: 50px;
-  }
-
-  #Home{align-items: center; }
-  #Proficiency{align-items: center;}
-  #Qualification{align-items: center;}
-  #Pro_Exp{align-items: center;}
-  #XP_Pro{align-items: center;}
+  /* 
+  
+  START_HOME
+  
+  */
 
   .D_Home{
     margin: 1%;
@@ -178,51 +197,6 @@
     flex-direction: column;
   }
   
-  .D_Quali{
-    margin: 1%;
-    font-size: 22px;
-    border-radius: 20px;
-    padding: 1vh 50vh 70vh 50vh;
-    border: 2px solid var(--pal2-background-color);
-    background: var(--pal4-background-color);
-  }
-
-  .D_Profi{
-    margin: 1%;
-    font-size: 22px;
-    border-radius: 20px;
-    background: var(--pal4-background-color);
-    padding: 1vh 15vh 15vh 15vh;
-    border: 2px solid var(--pal2-background-color); 
-  }
-
-  .D_Pro{
-    margin: 1%;
-    font-size: 22px;
-    border-radius: 20px;
-    padding: 1vh 15vh 20vh 15vh;
-    border: 2px solid var(--pal2-background-color);
-    background: var(--pal4-background-color);
-  }
-
-  .D_Perso{
-    margin: 1%;
-    font-size: 22px;
-    border-radius: 20px;
-    padding: 1vh 15vh 5vh 15vh;
-    border: 2px solid var(--pal2-background-color);
-    background: var(--pal4-background-color);
-  }
-
-  .D_Xp{
-    margin: 1%;
-    font-size: 22px;
-    border-radius: 20px;
-    padding: 1vh 15vh 20vh 15vh;
-    border: 2px solid var(--pal2-background-color);
-    background: var(--pal4-background-color);
-  }
-
   .Home_D1{
     margin-bottom: 4%;
     font-size: 35px;
@@ -243,6 +217,39 @@
     height: 50px;
   }
 
+  .Home_D5{
+    display: flex;
+    margin-top: 5%;
+    justify-content: center;
+  }
+
+  #Home_D5_D{
+    border: 2px solid var(--pal2-background-color);
+    padding: 4px;
+  }
+
+  /* 
+  
+  END_HOME
+  
+  */  
+
+  /* 
+  
+  START_QUALI
+  
+  */ 
+
+
+  .D_Quali{
+    margin: 1%;
+    font-size: 22px;
+    border-radius: 20px;
+    padding: 1vh 50vh 70vh 50vh;
+    border: 2px solid var(--pal2-background-color);
+    background: var(--pal4-background-color);
+  }
+
   .Quali_D1{
     border-radius: 20px;
     padding: 40px 20px 40px 20px;
@@ -261,44 +268,27 @@
     width: 100px;
     height: 100px;
   }
+
+  /* 
   
-  .Quali_D3{
-    display: flex;
-    margin-top: 5%;
-    justify-content: center;
-  }
+  END_QUALI
+  
+  */ 
 
-  .Quali_D3_D1{
-    border: 2px solid var(--pal2-background-color);
-    padding: 4px;
-  }
+  /* 
+  
+  START_PROFI
+  
+  */ 
 
-  .Profi_D1 {
-    width: fit-content;
-    border: 2px solid var(--pal2-background-color);
-    border-radius: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 20px;
-    background-color: var(--pal5-background-color);
-  }
 
-  .Pro_D1 img{
-    width: 80px;
-    height: 80px;
-  }
-
-  .Perso_D1 img{
-    width: 80px;
-    height: 80px;
-  }
-
-  .Profi_D2_D1{
+  .D_Profi{
+    margin: 1%;
     font-size: 22px;
-  }
-
-  #D2_Pourcen{
-    color: #ffffff;
+    border-radius: 20px;
+    background: var(--pal4-background-color);
+    padding: 1vh 15vh 15vh 15vh;
+    border: 2px solid var(--pal2-background-color); 
   }
 
   .Profi_D2{
@@ -308,7 +298,7 @@
     max-width: 800px;
   }
 
-  .ser{
+  #Profi_D2_D{
     padding: 20px;
     max-width: fit-content;
   }
@@ -338,11 +328,11 @@
   }
 
 
-  .ta{
+  .Profi_D2_D_Text{
     font-size: 20px;
   }
 
-  .p1, .p2, .p3, .p4, .p5, .p6, .p7, .p8, .p9, .p10{
+  #Profi_progess{
     height: 20px;
     border-radius: 4px;
     font-size: 20px;
@@ -359,14 +349,61 @@
   .p9{background-color: var(--soixante); width: 60%;}
   .p10{background-color: var(--quvin); width: 80%;}
 
-  .p1 p, .p2 p, .p3 p, .p4 p, .p5 p, .p6 p, .p7 p, .p8 p, .p9 p, .p10 p{
+  #Profi_progess p{
     font-size: 15px;
     color: white;
     padding: 4px;
   }
 
+  .Profi_D2_D1{
+    font-size: 22px;
+  }
+
+  .Profi_D1{
+    width: fit-content;
+    border: 2px solid var(--pal2-background-color);
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    background-color: var(--pal5-background-color);
+  }
+  
+  #Profi_D1_Pourcen{
+    color: #ffffff;
+  }
+
+
+  /* 
+  
+  END_PROFI
+  
+  */ 
+
+  /* 
+  
+  START_PRO
+  
+  */ 
+
+
+  .D_Pro{
+    margin: 1%;
+    font-size: 22px;
+    border-radius: 20px;
+    padding: 1vh 15vh 20vh 15vh;
+    border: 2px solid var(--pal2-background-color);
+    background: var(--pal4-background-color);
+  }
+
+  .Pro_D1 img{
+    width: 80px;
+    height: 80px;
+  }
+
   .Pro_C1{
     display: flex;
+    flex-direction: column;
     text-align: center;
   }
 
@@ -424,6 +461,29 @@
     margin-top: 80px;
   }
 
+  /* 
+  
+  END_PRO
+  
+  */ 
+
+
+  /* 
+  
+  START_XP
+  
+  */ 
+
+  .D_Xp{
+    margin: 1%;
+    font-size: 22px;
+    border-radius: 20px;
+    padding: 1vh 15vh 20vh 15vh;
+    border: 2px solid var(--pal2-background-color);
+    background: var(--pal4-background-color);
+  }
+
+    
   #Pro_Text{
     font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
@@ -455,13 +515,45 @@
     background-color:  var(--pal4-background-color);
   }
 
+  /* 
+  
+  END_XP
+  
+  */ 
+
+  /* 
+  
+  START_PERSO
+  
+  */ 
+
+
+
+  .D_Perso{
+    margin: 4% 0% 10% 0%;
+    font-size: 22px;
+    border-radius: 20px;
+    padding: 1vh 15vh 1vh 15vh;
+    border: 2px solid var(--pal2-background-color);
+    background: var(--pal4-background-color);
+  }
+
+
+
+  .Perso_D1 img{
+    width: 80px;
+    height: 80px;
+  }
+
   .Perso_D2{
     display: flex;
-    text-align: center;
+    justify-content: center;
+
   }
 
   .Perso_Tableau{
     text-align: center;
+    height: 20px;
     margin-bottom: 50px;
     padding: 10px;
     color: rgb(0, 0, 0);
@@ -474,7 +566,8 @@
     margin-left: 5px;
     border-radius: 10px;
     min-width: 150px;
-    max-width: 400px;
+    max-width: 200px;
+    max-height: 100px;
     background-color:  var(--pal3-background-color);
   }
 
@@ -486,7 +579,7 @@
   }
 
   .Perso_D3{
-    margin-top: 2%;
+    margin-top: 10%;
     display: flex;
     flex-direction:column;
     align-items: center;
@@ -504,7 +597,33 @@
 
   }
 
- .icone{
+  /* 
+  
+  END_PERSO
+  
+  */ 
+
+  /* 
+  
+                                        OTHER
+  
+  */ 
+
+  #scrollUp
+  {
+  position: fixed;
+  bottom : 10px;
+  right: -100px;
+  opacity: 0.5;
+  }
+
+  #scrollUp img{
+    height: 50px;
+    width: 50px;
+  }
+
+
+  .icone{
     position: absolute;
     top: 40%;
     left: 50%;
@@ -557,73 +676,86 @@
       animation: anim 3s ease forwards;
   }
 
-@keyframes loader-ut{
+
+
+  @keyframes loader-ut{
     
-  70% 
-  {
-    opacity: 1;
-  }
-
-  80% 
-  {
-    opacity: 0.5;
-  }
-
-  90% 
-  {
-    opacity: 0.2;
+    70% 
+    {
+      opacity: 1;
+    }
+  
+    80% 
+    {
+      opacity: 0.5;
+    }
+  
+    90% 
+    {
+      opacity: 0.2;
+    }
+    
+    100% 
+    {
+      opacity: 0;
+    }
+  
   }
   
-  100% 
-  {
-    opacity: 0;
-  }
-
-}
-
-@keyframes rotate {
- 
-  0% 
-  {
-    transform: rotate(0deg);
-  }
-
-  100% 
-  {
-    transform: rotate(360deg);
+  @keyframes rotate {
+   
+    0% 
+    {
+      transform: rotate(0deg);
+    }
+  
+    100% 
+    {
+      transform: rotate(360deg);
+    }
+    
   }
   
-}
-
-@keyframes animate{
+  @keyframes animate{
+    
+    0%,100%
+    {
+      stroke-dashoffset: 440;
+   
+    }
+   
+    50%
+    {
+      stroke-dashoffset: 0;
+   
+    }
+    
+    50.1%
+    {
+      stroke-dashoffset: 880;
+    }
   
-  0%,100%
-  {
-    stroke-dashoffset: 440;
- 
-  }
- 
-  50%
-  {
-    stroke-dashoffset: 0;
- 
   }
   
-  50.1%
-  {
-    stroke-dashoffset: 880;
-  }
-
-}
-
-@keyframes anim{
+  @keyframes anim{
+    
+    to
+    {
+      stroke-dashoffset: 0;
+    }
   
-  to
-  {
-    stroke-dashoffset: 0;
   }
 
-}
+
+  /* 
+  
+                                            END_BODY
+  
+  */
+
+
+  /*RESPOSIVE*/
+
 
 @media only screen and (max-width:2500px){
 
