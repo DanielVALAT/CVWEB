@@ -13,17 +13,17 @@
  */
 
   :root{
-    --pal1-background-color: #47403B;
-    --pal2-background-color: #8B827D;
-    --pal3-background-color: #BEBAB3;
-    --pal4-background-color: #F6F5F1;
-    --pal5-background-color: #e1cda3;
-
-    --navbar-background-color: #f2f2f2;
-    --navba-background-color: #cca561;
-    --navbar-item-hovered-color:white;
-    --navbar-separator-color:#ececec;
-    --navbar-icon-color:#646c79;
+    --pal5-background-color: rgb(148, 73, 16);
+    --pal4-background-color: rgb(255, 232, 214);
+    --pal3-background-color: rgb(203, 130, 74);
+    --pal2-background-color: rgb(80, 35, 0);
+    --pal1-background-color: rgb(6, 2, 0);
+    
+    --navbar-background-color: rgb(231, 201, 178);
+    --navba-background-color: rgb(203, 130, 74);
+    --navbar-item-hovered-color:rgb(255, 232, 214);
+    --navbar-separator-color:rgb(80, 35, 0);
+    --navbar-icon-color:rgb(80, 35, 0);
     --navbar-text-color:black;
     --navbar-transition-speed: .2s;
     --navbar-logo-background-color:#e2dfe4;
@@ -51,11 +51,9 @@
     height: 100%;
   }
 
-  
   section{
     display: flex;
     justify-content: center;
-    margin: 5%;
     margin-left: 6%;
     margin-right: 2%;
     height: 100vh;
@@ -120,6 +118,10 @@
     background-color:var(--navbar-item-hovered-color);
   }
 
+  #Item_first{
+    border-top: solid 1px var(--navbar-separator-color);
+  }
+
   .navbar-link{
     display:flex;
     align-items: center;
@@ -174,7 +176,7 @@
 
   /* 
   
-                        START_BODY
+                                                    START_BODY
   
   */
 
@@ -219,7 +221,7 @@
 
   .Home_D5{
     display: flex;
-    margin-top: 5%;
+    margin-top: 0%;
     justify-content: center;
   }
 
@@ -240,12 +242,11 @@
   
   */ 
 
-
   .D_Quali{
     margin: 1%;
     font-size: 22px;
     border-radius: 20px;
-    padding: 1vh 50vh 70vh 50vh;
+    padding: 1vh 45vh 70vh 45vh;
     border: 2px solid var(--pal2-background-color);
     background: var(--pal4-background-color);
   }
@@ -280,7 +281,6 @@
   START_PROFI
   
   */ 
-
 
   .D_Profi{
     margin: 1%;
@@ -327,7 +327,6 @@
     margin-right: auto;
   }
 
-
   .Profi_D2_D_Text{
     font-size: 20px;
   }
@@ -373,7 +372,6 @@
     color: #ffffff;
   }
 
-
   /* 
   
   END_PROFI
@@ -386,12 +384,11 @@
   
   */ 
 
-
   .D_Pro{
     margin: 1%;
     font-size: 22px;
     border-radius: 20px;
-    padding: 1vh 15vh 20vh 15vh;
+    padding: 1vh 15vh 1vh 15vh;
     border: 2px solid var(--pal2-background-color);
     background: var(--pal4-background-color);
   }
@@ -414,7 +411,7 @@
 
   .Pro_D2{
     border: 2px solid var(--pal2-background-color);
-    padding: 20px 4px 100px 4px;
+    padding: 20px 4px 50px 4px;
     margin: 4px;
     border-radius: 20px;
     background-color: var(--pal3-background-color);
@@ -422,7 +419,7 @@
 
   .Pro_D3{
     border: 2px solid var(--pal2-background-color);
-    padding: 20px 4px 100px 4px;
+    padding: 20px 4px 50px 4px;
     margin: 4px;
     border-radius: 20px;
     background-color: var(--pal4-background-color);
@@ -430,7 +427,7 @@
 
   .Pro_D4{
     border: 2px solid var(--pal2-background-color);
-    padding: 20px 4px 100px 4px;
+    padding: 20px 4px 50px 4px;
     margin: 4px;
     border-radius: 20px;
     background-color: var(--pal5-background-color);
@@ -443,7 +440,7 @@
   #Pro_Table{
     font-size: 15px;
     padding: 1%;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
   }
 
   #Pro_Table table{
@@ -458,7 +455,13 @@
 
   #Pro_Title_M{
     font-size: 18px;
-    margin-top: 80px;
+    margin-top: 5px;
+  }
+
+  #Pro_Text{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    
   }
 
   /* 
@@ -478,16 +481,9 @@
     margin: 1%;
     font-size: 22px;
     border-radius: 20px;
-    padding: 1vh 15vh 20vh 15vh;
+    padding: 1vh 15vh 5vh 15vh;
     border: 2px solid var(--pal2-background-color);
     background: var(--pal4-background-color);
-  }
-
-    
-  #Pro_Text{
-    font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
-    
   }
 
   #Xp_Title{
@@ -527,18 +523,14 @@
   
   */ 
 
-
-
   .D_Perso{
     margin: 4% 0% 10% 0%;
     font-size: 22px;
     border-radius: 20px;
-    padding: 1vh 15vh 1vh 15vh;
+    padding: 1vh 15vh 2vh 15vh;
     border: 2px solid var(--pal2-background-color);
     background: var(--pal4-background-color);
   }
-
-
 
   .Perso_D1 img{
     width: 80px;
@@ -579,7 +571,8 @@
   }
 
   .Perso_D3{
-    margin-top: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
     display: flex;
     flex-direction:column;
     align-items: center;
@@ -605,7 +598,7 @@
 
   /* 
   
-                                        OTHER
+                                                     OTHER
   
   */ 
 
@@ -613,7 +606,7 @@
   {
   position: fixed;
   bottom : 10px;
-  right: -100px;
+  right: 0px;
   opacity: 0.5;
   }
 
@@ -621,7 +614,6 @@
     height: 50px;
     width: 50px;
   }
-
 
   .icone{
     position: absolute;
@@ -662,7 +654,6 @@
     opacity: 0.5;
   }
   
-
   .icone path:nth-child(1){
       stroke-dasharray: 1500px;
       stroke-dashoffset: 1500px;
@@ -749,7 +740,7 @@
 
   /* 
   
-                                            END_BODY
+                                                END_BODY
   
   */
 
@@ -762,32 +753,41 @@
   
 }
 
-@media only screen and (max-width:1910px){
-
-  
-}
-
-@media only screen and (max-width:1024px){
+@media only screen and (max-width:1924px){
   
   section{
-    margin-left: 0%;
-    margin-right: 0%;
-    height: 80vh;
-    width: 100%;
-    border: 2px solid var(--pal2-background-color);
+    margin-left: 4%;
+    margin-right: 1%;
+    height: 100vh;
+
   }
 
-  #Home{
+  #Qualification{
     margin-top: 10%;
   }
 
+  #Proficiency{
+    margin-top: 10%;
+  }
+
+  #Pro_Exp{
+    margin-top: 10%;
+  }
+
+  #XP_Pro{
+    margin-top: 10%;
+  }
+
+  #Perso_Exp{
+  }
+
   .D_Home{
-    padding: 1vh 10vh 4vh 10vh;
-    font-size: 22px;
+    padding: 2vh 20vh 5vh 20vh;
+    font-size: 20px;
   }
   
   .D_Quali{
-    padding: 1vh 10vh 4vh 10vh;
+    padding: 2vh 2vh 8vh 2vh;
   }
 
   .D_Profi{
@@ -795,7 +795,7 @@
     font-size: 15px;
     border-radius: 20px;
     background: var(--pal4-background-color);
-    padding: 1vh 10vh 4vh 10vh;
+    padding: 1vh 0.5vh 5vh 0.5vh;
     border: 2px solid var(--pal2-background-color); 
   }
 
@@ -803,7 +803,7 @@
     margin: 1%;
     font-size: 10px;
     border-radius: 20px;
-    padding: 1vh 0vh 0vh 2vh;
+    padding: 0.5vh 0.5vh 0.5vh 0.5vh;
     max-width: 100;
     border: 2px solid var(--pal2-background-color);
     background: var(--pal4-background-color);
@@ -814,7 +814,7 @@
     margin-top: 10%;
     font-size: 15px;
     border-radius: 20px;
-    padding: 1vh 1vh 2vh 1vh;
+    padding: 0.5vh 0.5vh 0.5vh 0.5vh;
     border: 2px solid var(--pal2-background-color);
     background: var(--pal4-background-color);
   }
@@ -823,9 +823,278 @@
     margin: 1%;
     font-size: 22px;
     border-radius: 20px;
+    padding: 0.5vh 0.5vh 0.5vh 0.5vh;
+    border: 2px solid var(--pal2-background-color);
+    background: var(--pal4-background-color);
+  }
+
+  .Quali_D1{
+    font-size: 30px;
+  }
+
+  #Pro_Table{
+    font-size: 13px;
+  }
+  
+  #Pro_Text{
+    font-size: 13px;
+  }
+
+  #Xp_Title{
+    font-size: 16px;
+  }
+
+}
+
+@media only screen and (max-width:1024px){
+  
+  section{
+    margin-left: 0%;
+    margin-right: 0%;
+    height: 100vh;
+  }
+
+  #Home{
+    margin-top: 10%;
+  }
+
+  #Qualification{
+    margin-top: 0%;
+  }
+
+  #Proficiency{
+    margin-top: 30%;
+  }
+
+  #Pro_Exp{
+    margin-top: 10%;
+  }
+
+  #XP_Pro{
+    margin-top: 10%;
+  }
+
+  #Perso_Exp{
+  }
+
+  
+  .progressbar-wrapper {
+    background-color: #dfe6e9;
+    color: white;
+    border-radius: 5px;
+    width: 100px;
+    height: 20px;
+  }
+  
+
+  .D_Home{
+    padding: 1vh 10vh 4vh 10vh;
+    font-size: 15px;
+  }
+  
+  .D_Quali{
+    padding: 1vh 10vh 4vh 10vh;
+    
+  }
+
+  .D_Profi{
+    margin-top: 5%;
+    height: 70vh;
+    font-size: 15px;
+    border-radius: 20px;
+    background: var(--pal4-background-color);
+    padding: 1vh 10vh 1vh 10vh;
+    border: 2px solid var(--pal2-background-color); 
+  }
+
+  .D_Pro{
+    margin-top: 5%;
+    height: 75vh;
+    font-size: 10px;
+    border-radius: 20px;
+    padding: 1vh 0vh 0vh 1vh;
+    max-width: 100;
+    border: 2px solid var(--pal2-background-color);
+    background: var(--pal4-background-color);
+  }
+
+  .D_Perso{
+    margin-bottom: 0%;
+    height: 80vh;
+    padding: 1px;
+    margin-top: 25%;
+    font-size: 15px;
+    border-radius: 20px;
+    padding: 0vh 0vh 1vh 2vh;
+    border: 2px solid var(--pal2-background-color);
+    background: var(--pal4-background-color);
+  }
+
+  .D_Xp{
+    margin-top: 15%;
+    height: 75vh;
+    font-size: 22px;
+    border-radius: 20px;
     padding: 1vh 10vh 4vh 10vh;
     border: 2px solid var(--pal2-background-color);
     background: var(--pal4-background-color);
+  }
+
+  .Perso_D2_D{
+    padding: 1px;
+    border: 2px solid var(--pal2-background-color);
+    padding: 5px 2px 10px 2px;
+    margin: 5px;
+    border-radius: 10px;
+    min-width: 50px;
+    max-height: 200px;
+    background-color:  var(--pal3-background-color);
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Perso_Tableau{
+    text-align: center;
+    height: 20px;
+    margin-bottom: 0px;
+    color: rgb(0, 0, 0);
+    min-width: 150px;
+  }
+
+  .Perso_D2{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 400px;
+    margin: 1px;
+  }
+
+  .Perso_C1{
+    background-color:  var(--pal4-background-color);
+    border-radius: 0px;
+    margin-bottom: 0%;
+    text-align: center;
+    width: 100px;
+  }
+
+  .Perso_D3{
+    margin-top: 0%;
+    margin-bottom: 0%;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+  }
+
+  .Perso_D3_D1{
+    margin-bottom: 20px;
+  }
+
+  .Perso_D3_D2{
+  background-color:  var(--pal3-background-color);
+  width: 200px;
+  padding: 10px;
+  font-size: 10px;
+  }
+
+  #Profi_D2_D{
+    padding: 5px;
+    width: 300px;
+  }
+
+  #Profi_progess p{
+    font-size: 10px;
+    color: white;
+    padding: 4px;
+  }
+
+  #D2_{
+    font-size: 8px;
+  }
+
+
+
+  .Xp_D1{
+    border: 2px solid var(--pal2-background-color);
+    margin: 1px;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px;
+    background-color:  var(--pal3-background-color);
+  }
+
+  .Xp_D2{
+    border: 2px solid var(--pal2-background-color);
+    padding: 20px;
+    border-radius: 20px;
+    margin: 20px;
+    margin-top: 5%;
+    background-color:  var(--pal4-background-color);
+  }
+
+  #Profi_D1_Pourcen{
+    font-size: 10px;
+    color: #ffffff;
+  }
+
+  .Pro_D4{
+    width: 100px;
+  }
+  
+  .Pro_D3{
+    width: 100px;
+  }
+  
+  .Pro_D2{
+    width: 100px;
+  }
+
+  .Profi_D2_D_Text{
+    font-size: 5px;
+  }
+
+  .Perso_C1{
+    font-size: 6px;
+  }
+
+  .Quali_D1{
+    font-size: 20px;
+  }
+
+  #Pro_Table{
+    font-size: 6px;
+  }
+  
+  #Pro_Text{
+    font-size: 6px;
+  }
+
+  #Pro_Title_M{
+    font-size: 15px;
+  }
+
+  .Xp_D2_D5_D1{
+    font-size: 16px;
+    margin-bottom:1% ;
+  }
+
+  .Xp_D3_D5_D1{
+    font-size: 16px;
+    margin-bottom:1% ;
+  }
+
+  .Pro_C1{
+    display: flex;
+    flex-direction:unset;
+
+  }
+
+  #Pro_Title{
+    font-size: 8px;
+  }
+
+  #Xp_Title{
+    font-size: 8px;
   }
 
   main{
@@ -836,25 +1105,9 @@
     font-size: 12px
   }
 
-  .Perso_C1{
-    font-size: 13px;
-  }
-
   .Perso_D3{
     margin-top: 10%;
   }
-
-
-
-
-
-
-
-
-
-
-
-
 
   .navbar{
     bottom:auto;
