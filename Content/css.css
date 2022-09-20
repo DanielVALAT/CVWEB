@@ -1,27 +1,21 @@
   /* 
-  
   CSS CVWEBLUCAS_
 
-  ©Copyright  2022  lucas.lab.barraille.fr
+  ©Copyright  2022  barraille.fr
   
-  */
-
-  /* 
-
   START_ROOT
- 
  */
 
   :root{
-    --pal5-background-color: rgb(148, 73, 16);
-    --pal4-background-color: rgb(255, 232, 214);
-    --pal3-background-color: rgb(203, 130, 74);
-    --pal2-background-color: rgb(80, 35, 0);
-    --pal1-background-color: rgb(6, 2, 0);
+    --pal5-background-color: rgb(83, 83, 83);
+    --pal4-background-color: rgb(244, 225, 210);
+    --pal3-background-color: rgb(155, 130, 112);
+    --pal2-background-color: rgb(0, 0, 0);
+    --pal1-background-color: rgb(255, 255, 255);
     
-    --navbar-background-color: rgb(231, 201, 178);
-    --navba-background-color: rgb(203, 130, 74);
-    --navbar-item-hovered-color:rgb(255, 232, 214);
+    --navbar-background-color: rgb(151, 138, 129);
+    --navba-background-color: rgb(244, 225, 210);
+    --navbar-item-hovered-color:rgb(240, 160, 102);
     --navbar-separator-color:rgb(80, 35, 0);
     --navbar-icon-color:rgb(80, 35, 0);
     --navbar-text-color:black;
@@ -35,43 +29,35 @@
   }
 
   html{
-    color: var(--pal1-background-color);
+    color: var(--pal2-background-color);
     scroll-behavior: smooth;
-    width: 100%;
-    height: 100%;
     background: var(--pal5-background-color);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
   }
 
   body{
     font-family: 'Josefin Sans', sans-serif;
-    font-size:16px;
-    height: 100%;
   }
 
   section{
     display: flex;
     justify-content: center;
-    margin-left: 6%;
-    margin-right: 2%;
+    margin-left: 5rem;
+    margin-right: 5rem;
     height: 100vh;
     align-items: center;
   }
 
+  .Title_{
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+  }
 
-  /* 
-
+  /*
   END_ROOT
  
- */
 
 
-  /* 
-  
   START_NAVBAR
-  
   */
 
   .navbar{
@@ -155,7 +141,7 @@
   }
 
   .logo{
-    background:var(--navbar-logo-background-color);
+    background:rgb(250, 110, 10);
   }
   
   .logo .navbar-title{
@@ -169,126 +155,121 @@
   }
 
   /* 
-  
   END_NAVBAR
   
-  */
+  
+                                                  START_BODY
+  
 
-  /* 
-  
-                                                    START_BODY
-  
-  */
-
-  /* 
-  
   START_HOME
-  
   */
 
   .D_Home{
-    margin: 1%;
-    background: var(--pal4-background-color);
-    font-size: 22px;
-    border-radius: 20px;
-    padding: 20vh 50vh 20vh 50vh;
-    border: 2px solid var(--pal2-background-color);
-    align-items: center;
-    font-size: 30px;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    font-size: 2rem;
+    border: 2px solid black;
+    border-radius : 1rem;
+    background-color: var(--pal4-background-color);
+    padding: 5rem;
   }
-  
+
   .Home_D1{
-    margin-bottom: 4%;
-    font-size: 35px;
+    margin-bottom: 1rem;
+  }
+
+  .Home_D1 img{
+    height: 4rem;
+    width: 4rem;
+  }
+
+  .Home_D2{
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
   }
 
   .Home_D3{
+    margin-bottom: 0.8rem;
+  }
+
+  .Home_D6{
+    margin-top: 1rem;
     display: flex;
-    align-items: center;
-    margin-bottom: 5%;
-  }
-
-  .Home_D3_D1{
-    padding-right: 20px;
-  }
-
-  .Home_D3_D1 img{
-    width: 50px;
-    height: 50px;
-  }
-
-  .Home_D5{
-    display: flex;
-    margin-top: 0%;
     justify-content: center;
+    align-items: center;
   }
 
-  #Home_D5_D{
-    border: 2px solid var(--pal2-background-color);
-    padding: 4px;
+  .Home_D6_D1{
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    padding: 0.3rem;
   }
+
+  .Home_D6_D2{
+    border-right: 2px solid black;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    padding: 0.3rem;
+  }
+
 
   /* 
-  
   END_HOME
   
-  */  
 
-  /* 
   
   START_QUALI
-  
-  */ 
+  */
 
   .D_Quali{
-    margin: 1%;
-    font-size: 22px;
-    border-radius: 20px;
-    padding: 1vh 45vh 70vh 45vh;
-    border: 2px solid var(--pal2-background-color);
-    background: var(--pal4-background-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid black;
+    border-radius : 10px;
+    background-color: var(--pal4-background-color);
+    padding: 4rem;
+  }
+
+  .Quali_C{
+    display: flex;
+    flex-direction: column;
   }
 
   .Quali_D1{
-    border-radius: 20px;
-    padding: 40px 20px 40px 20px;
-    text-align: center;
-    font-size: 40px;
+    background-color: var(--pal3-background-color);
+    border-radius : 10px;
+    padding: 0.4rem;
+    margin-bottom: 1rem;
+    border: 2px solid black;
   }
 
   .Quali_D2{
-    border: 2px solid var(--pal2-background-color);
-    border-radius: 20px;
-    padding: 20px 20px 20px 20px;
-    background: var(--pal3-background-color);
-  }
-
-  .Quali_D1 img{
-    width: 100px;
-    height: 100px;
+    background-color: var(--pal3-background-color);
+    border-radius : 10px;
+    padding: 0.4rem;
+    border: 2px solid black;
   }
 
   /* 
-  
   END_QUALI
   
-  */ 
 
-  /* 
   
   START_PROFI
-  
   */ 
 
   .D_Profi{
-    margin: 1%;
-    font-size: 22px;
-    border-radius: 20px;
-    background: var(--pal4-background-color);
-    padding: 1vh 15vh 15vh 15vh;
-    border: 2px solid var(--pal2-background-color); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid black;
+    border-radius : 10px;
+    background-color: var(--pal4-background-color);
+    padding: 4rem;
   }
 
   .Profi_D2{
@@ -299,15 +280,15 @@
   }
 
   #Profi_D2_D{
-    padding: 20px;
+    padding: 10px;
     max-width: fit-content;
   }
   
   .progressbar-wrapper {
-    background-color: #dfe6e9;
+    background-color: #bdc2c4;
     color: white;
     border-radius: 5px;
-    width: 250px;
+    width: 150px;
     height: 20px;
   }
   
@@ -320,7 +301,7 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 5vh;
-    font-size: 20px;
+    font-size: 10px;
     padding-left: 20px;
     padding-right: 20px;
     margin-left: auto;
@@ -334,7 +315,7 @@
   #Profi_progess{
     height: 20px;
     border-radius: 4px;
-    font-size: 20px;
+    font-size: 10px;
   }
 
   .p1{background-color: var(--qua); width: 40%;}
@@ -349,13 +330,13 @@
   .p10{background-color: var(--quvin); width: 80%;}
 
   #Profi_progess p{
-    font-size: 15px;
+    font-size: 10px;
     color: white;
     padding: 4px;
   }
 
   .Profi_D2_D1{
-    font-size: 22px;
+    font-size: 10px;
   }
 
   .Profi_D1{
@@ -365,7 +346,7 @@
     margin-left: auto;
     margin-right: auto;
     padding: 20px;
-    background-color: var(--pal5-background-color);
+    background-color: var(--pal3-background-color);
   }
   
   #Profi_D1_Pourcen{
@@ -373,74 +354,75 @@
   }
 
   /* 
-  
   END_PROFI
   
-  */ 
 
-  /* 
   
   START_PRO
-  
   */ 
 
   .D_Pro{
-    margin: 1%;
-    font-size: 22px;
-    border-radius: 20px;
-    padding: 1vh 15vh 1vh 15vh;
-    border: 2px solid var(--pal2-background-color);
-    background: var(--pal4-background-color);
-  }
-
-  .Pro_D1 img{
-    width: 80px;
-    height: 80px;
-  }
-
-  .Pro_C1{
     display: flex;
+    align-items: center;
     flex-direction: column;
-    text-align: center;
+    border: 2px solid black;
+    border-radius : 10px;
+    background-color: var(--pal4-background-color);
+    padding: 5rem;
   }
 
-  .D_Pro{
-    text-align: center;
-    font-size: 20px;
+  .Pro_C{
+    display: flex;
+    font-size: 15px;
+    border: 1px solid black;
   }
 
   .Pro_D2{
-    border: 2px solid var(--pal2-background-color);
-    padding: 20px 4px 50px 4px;
-    margin: 4px;
-    border-radius: 20px;
+    margin: 5px;
+    padding: 8px;
+    border-radius: 10px;
     background-color: var(--pal3-background-color);
+    max-width: 500px;
+    min-height: 300px;
+    border: 2px solid black;
   }
 
   .Pro_D3{
-    border: 2px solid var(--pal2-background-color);
-    padding: 20px 4px 50px 4px;
-    margin: 4px;
-    border-radius: 20px;
-    background-color: var(--pal4-background-color);
+    margin: 5px;
+    padding: 8px;
+    border-radius: 10px;
+    background-color: var(--pal3-background-color);
+    max-width: 500px;
+    min-height: 300px;
+    border: 2px solid black;
   }
 
   .Pro_D4{
-    border: 2px solid var(--pal2-background-color);
-    padding: 20px 4px 50px 4px;
-    margin: 4px;
-    border-radius: 20px;
-    background-color: var(--pal5-background-color);
+    margin: 5px;
+    padding: 8px;
+    border-radius: 10px;
+    background-color: var(--pal3-background-color);
+    max-width: 500px;
+    min-height: 300px;
+    border: 2px solid black;
   }
 
   #Pro_Title{
-    margin-top: 10px;
+    font-size: 1.4rem;
+    padding: 10px;
+    text-align: center;
+  }
+
+  #Pro_Text{
+    height: auto;
+    text-align: justify;
+    font-size: 1.1rem;
+    color: white;
   }
 
   #Pro_Table{
-    font-size: 15px;
-    padding: 1%;
-    margin-bottom: 5px;
+    padding: 5px;
+    height: 80px ;
   }
 
   #Pro_Table table{
@@ -449,92 +431,85 @@
 
   #Pro_Table td{
     border: 2px solid var(--pal2-background-color);
-    padding: 4px;
+    padding: 2px;
     text-align: left;
+    font-size: 0.8rem;
   }
 
   #Pro_Title_M{
-    font-size: 18px;
-    margin-top: 5px;
-  }
-
-  #Pro_Text{
-    font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
-    
+    margin-top: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 1.4rem;
   }
 
   /* 
-  
   END_PRO
   
-  */ 
 
-
-  /* 
-  
   START_XP
-  
   */ 
 
   .D_Xp{
-    margin: 1%;
-    font-size: 22px;
-    border-radius: 20px;
-    padding: 1vh 15vh 5vh 15vh;
-    border: 2px solid var(--pal2-background-color);
-    background: var(--pal4-background-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid black;
+    border-radius : 10px;
+    background-color: var(--pal4-background-color);
+    padding: 5rem;
   }
 
-  #Xp_Title{
-    padding-top: 20px;
-  }
-
-  .D_Xp{
-    text-align: center;
+  .Xp_C{
+    display: flex;
   }
 
   .Xp_D1{
-    border: 2px solid var(--pal2-background-color);
-    margin: 20px;
-    padding: 20px;
-    border-radius: 20px;
-    background-color:  var(--pal3-background-color);
+    width: 300px;
+    padding:10px;
+    background-color: var(--pal3-background-color);
+    margin: 10px;
+    border-radius: 10px;
+    border: 2px solid black;
   }
 
   .Xp_D2{
-    border: 2px solid var(--pal2-background-color);
-    padding: 20px;
-    border-radius: 20px;
-    margin: 20px;
-    margin-top: 10%;
-    background-color:  var(--pal4-background-color);
+    width: 300px;
+    padding:10px;
+    background-color: var(--pal3-background-color);
+    margin: 10px;
+    border-radius: 10px;
+    border: 2px solid black;
+  }
+
+  .Xp_D2_D5_D1{
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+  .Xp_D3_D5_D1{
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    text-align: center;
   }
 
   /* 
-  
   END_XP
   
-  */ 
 
-  /* 
   
   START_PERSO
-  
   */ 
 
   .D_Perso{
-    margin: 4% 0% 10% 0%;
-    font-size: 22px;
-    border-radius: 20px;
-    padding: 1vh 15vh 2vh 15vh;
-    border: 2px solid var(--pal2-background-color);
-    background: var(--pal4-background-color);
-  }
-
-  .Perso_D1 img{
-    width: 80px;
-    height: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid black;
+    border-radius : 10px;
+    background-color: var(--pal4-background-color);
+    padding: 5rem;
   }
 
   .Perso_D2{
@@ -546,7 +521,6 @@
   .Perso_Tableau{
     text-align: center;
     height: 20px;
-    margin-bottom: 50px;
     padding: 10px;
     color: rgb(0, 0, 0);
   }
@@ -554,20 +528,18 @@
   .Perso_D2_D{
     padding: 10px;
     border: 2px solid var(--pal2-background-color);
-    padding: 2px 2px 20% 2px;
-    margin-left: 5px;
-    border-radius: 10px;
-    min-width: 150px;
-    max-width: 200px;
-    max-height: 100px;
     background-color:  var(--pal3-background-color);
+    width: 200px;
+    margin: 5px;
+    border-radius: 10px;
   }
 
   .Perso_C1{
-    background-color:  var(--pal4-background-color);
+    background-color:  var(--pal1-background-color);
     border-radius: 10px;
     padding: 8px;
     margin: 10px;
+    text-align: center;
   }
 
   .Perso_D3{
@@ -584,21 +556,21 @@
   }
 
   .Perso_D3_D2{
-  background-color:  var(--pal3-background-color);
+  background-color:  var(--pal1-background-color);
   width: fit-content;
   padding: 10px;
-
+  border-radius: 10px;
+  border: 1px solid black;
   }
 
-  /* 
-  
-  END_PERSO
-  
-  */ 
+
+
 
   /* 
+  END_PERSO
+
   
-                                                     OTHER
+                                                   OTHER
   
   */ 
 
@@ -754,369 +726,49 @@
 }
 
 @media only screen and (max-width:1924px){
-  
-  section{
-    margin-left: 4%;
-    margin-right: 1%;
-    height: 100vh;
-
-  }
-
-  #Qualification{
-    margin-top: 10%;
-  }
-
-  #Proficiency{
-    margin-top: 10%;
-  }
-
-  #Pro_Exp{
-    margin-top: 10%;
-  }
-
-  #XP_Pro{
-    margin-top: 10%;
-  }
-
-  #Perso_Exp{
-  }
-
-  .D_Home{
-    padding: 2vh 20vh 5vh 20vh;
-    font-size: 20px;
-  }
-  
-  .D_Quali{
-    padding: 2vh 2vh 8vh 2vh;
-  }
-
-  .D_Profi{
-    margin: 1%;
-    font-size: 15px;
-    border-radius: 20px;
-    background: var(--pal4-background-color);
-    padding: 1vh 0.5vh 5vh 0.5vh;
-    border: 2px solid var(--pal2-background-color); 
-  }
-
-  .D_Pro{
-    margin: 1%;
-    font-size: 10px;
-    border-radius: 20px;
-    padding: 0.5vh 0.5vh 0.5vh 0.5vh;
-    max-width: 100;
-    border: 2px solid var(--pal2-background-color);
-    background: var(--pal4-background-color);
-  }
-
-  .D_Perso{
-    margin-bottom: 2%;
-    margin-top: 10%;
-    font-size: 15px;
-    border-radius: 20px;
-    padding: 0.5vh 0.5vh 0.5vh 0.5vh;
-    border: 2px solid var(--pal2-background-color);
-    background: var(--pal4-background-color);
-  }
-
-  .D_Xp{
-    margin: 1%;
-    font-size: 22px;
-    border-radius: 20px;
-    padding: 0.5vh 0.5vh 0.5vh 0.5vh;
-    border: 2px solid var(--pal2-background-color);
-    background: var(--pal4-background-color);
-  }
-
-  .Quali_D1{
-    font-size: 30px;
-  }
-
-  #Pro_Table{
-    font-size: 13px;
-  }
-  
-  #Pro_Text{
-    font-size: 13px;
-  }
-
-  #Xp_Title{
-    font-size: 16px;
-  }
-
+ 
 }
 
 @media only screen and (max-width:1024px){
   
-  section{
-    margin-left: 0%;
-    margin-right: 0%;
-    height: 100vh;
+  html{
+    color: var(--pal2-background-color);
+    scroll-behavior: smooth;
+    background: var(--pal5-background-color);
   }
 
-  #Home{
-    margin-top: 10%;
+  body{
+    font-family: 'Josefin Sans', sans-serif;
   }
 
-  #Qualification{
-    margin-top: 0%;
-  }
-
-  #Proficiency{
-    margin-top: 30%;
-  }
-
-  #Pro_Exp{
-    margin-top: 10%;
-  }
-
-  #XP_Pro{
-    margin-top: 10%;
-  }
-
-  #Perso_Exp{
-  }
-
-  
-  .progressbar-wrapper {
-    background-color: #dfe6e9;
-    color: white;
-    border-radius: 5px;
-    width: 100px;
-    height: 20px;
-  }
-  
-
-  .D_Home{
-    padding: 1vh 10vh 4vh 10vh;
-    font-size: 15px;
-  }
-  
-  .D_Quali{
-    padding: 1vh 10vh 4vh 10vh;
-    
-  }
-
-  .D_Profi{
-    margin-top: 5%;
-    height: 70vh;
-    font-size: 15px;
-    border-radius: 20px;
-    background: var(--pal4-background-color);
-    padding: 1vh 10vh 1vh 10vh;
-    border: 2px solid var(--pal2-background-color); 
-  }
-
-  .D_Pro{
-    margin-top: 5%;
-    height: 75vh;
-    font-size: 10px;
-    border-radius: 20px;
-    padding: 1vh 0vh 0vh 1vh;
-    max-width: 100;
-    border: 2px solid var(--pal2-background-color);
-    background: var(--pal4-background-color);
-  }
-
-  .D_Perso{
-    margin-bottom: 0%;
-    height: 80vh;
-    padding: 1px;
-    margin-top: 25%;
-    font-size: 15px;
-    border-radius: 20px;
-    padding: 0vh 0vh 1vh 2vh;
-    border: 2px solid var(--pal2-background-color);
-    background: var(--pal4-background-color);
-  }
-
-  .D_Xp{
-    margin-top: 15%;
-    height: 75vh;
-    font-size: 22px;
-    border-radius: 20px;
-    padding: 1vh 10vh 4vh 10vh;
-    border: 2px solid var(--pal2-background-color);
-    background: var(--pal4-background-color);
-  }
-
-  .Perso_D2_D{
-    padding: 1px;
-    border: 2px solid var(--pal2-background-color);
-    padding: 5px 2px 10px 2px;
-    margin: 5px;
-    border-radius: 10px;
-    min-width: 50px;
-    max-height: 200px;
-    background-color:  var(--pal3-background-color);
+  .content{
     align-items: center;
-    display: flex;
-    flex-direction: column;
+
   }
 
-  .Perso_Tableau{
-    text-align: center;
-    height: 20px;
-    margin-bottom: 0px;
-    color: rgb(0, 0, 0);
-    min-width: 150px;
-  }
-
-  .Perso_D2{
+  section{
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-    width: 400px;
-    margin: 1px;
-  }
-
-  .Perso_C1{
-    background-color:  var(--pal4-background-color);
-    border-radius: 0px;
-    margin-bottom: 0%;
-    text-align: center;
-    width: 100px;
-  }
-
-  .Perso_D3{
-    margin-top: 0%;
-    margin-bottom: 0%;
-    display: flex;
-    flex-direction:column;
+    margin-left: 0rem;
+    margin-right: 0rem;
+    height: 100%;
     align-items: center;
   }
 
-  .Perso_D3_D1{
-    margin-bottom: 20px;
+  .Title_{
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
   }
 
-  .Perso_D3_D2{
-  background-color:  var(--pal3-background-color);
-  width: 200px;
-  padding: 10px;
-  font-size: 10px;
-  }
-
-  #Profi_D2_D{
-    padding: 5px;
-    width: 300px;
-  }
-
-  #Profi_progess p{
-    font-size: 10px;
-    color: white;
-    padding: 4px;
-  }
-
-  #D2_{
-    font-size: 8px;
-  }
-
-
-
-  .Xp_D1{
-    border: 2px solid var(--pal2-background-color);
-    margin: 1px;
-    padding: 20px;
-    margin: 20px;
-    border-radius: 20px;
-    background-color:  var(--pal3-background-color);
-  }
-
-  .Xp_D2{
-    border: 2px solid var(--pal2-background-color);
-    padding: 20px;
-    border-radius: 20px;
-    margin: 20px;
-    margin-top: 5%;
-    background-color:  var(--pal4-background-color);
-  }
-
-  #Profi_D1_Pourcen{
-    font-size: 10px;
-    color: #ffffff;
-  }
-
-  .Pro_D4{
-    width: 100px;
-  }
-  
-  .Pro_D3{
-    width: 100px;
-  }
-  
-  .Pro_D2{
-    width: 100px;
-  }
-
-  .Profi_D2_D_Text{
-    font-size: 5px;
-  }
-
-  .Perso_C1{
-    font-size: 6px;
-  }
-
-  .Quali_D1{
-    font-size: 20px;
-  }
-
-  #Pro_Table{
-    font-size: 6px;
-  }
-  
-  #Pro_Text{
-    font-size: 6px;
-  }
-
-  #Pro_Title_M{
-    font-size: 15px;
-  }
-
-  .Xp_D2_D5_D1{
-    font-size: 16px;
-    margin-bottom:1% ;
-  }
-
-  .Xp_D3_D5_D1{
-    font-size: 16px;
-    margin-bottom:1% ;
-  }
-
-  .Pro_C1{
-    display: flex;
-    flex-direction:unset;
-
-  }
-
-  #Pro_Title{
-    font-size: 8px;
-  }
-
-  #Xp_Title{
-    font-size: 8px;
-  }
-
-  main{
-    margin-bottom:5rem;
-  }
-
-  .Perso_Tableau{
-    font-size: 12px
-  }
-
-  .Perso_D3{
-    margin-top: 10%;
-  }
 
   .navbar{
-    bottom:auto;
-    width:100%;
-    top:0px;
+    bottom: auto;
+    width: 100%;
+    top: 0px;
   }
 
   .navbar:hover{
-    width:100%;
+    width: 100%;
   }
 
   .navbar-menu{
@@ -1124,15 +776,15 @@
   }
 
   .logo{
-    display:none;
+    display: none;
   }
   
   .navbar:hover .navbar-title{
-    display:none;
+    display: none;
   }
 
   .navbar-icon{
-    min-width:auto;
+    min-width: auto;
     margin:0;
   }
 
@@ -1142,6 +794,128 @@
 
   .navbar-link{
     justify-content: center;
+  }
+
+  #Profi_D2_D{
+    width: 200px;
+  }
+
+  .progressbar-wrapper {
+    background-color: #bdc2c4;
+    color: white;
+    border-radius: 5px;
+    width: 100px;
+    height: 20px;
+  }
+
+  .Pro_C{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+  }
+
+  .D_Home{
+    padding: 1rem;
+    font-size: 14px;
+    margin-top: 6rem;
+  }
+
+  .D_Pro{
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid black;
+    border-radius : 10px;
+    background-color: var(--pal4-background-color);
+    padding: 1rem 0rem 1rem 0rem;
+    margin-top: 6rem;
+  }
+
+  .Perso_D2{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 200px;
+    min-height: 200px;
+  }
+
+  .Xp_D1{
+    width: 300px;
+    padding: 10px;
+    background-color: var(--pal3-background-color);
+    margin: 10px;
+    border-radius: 10px;
+    border: 2px solid black;
+  }
+
+  .Xp_C{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Xp_D2{
+    width: 300px;
+    padding:10px;
+    background-color: var(--pal3-background-color);
+    margin: 10px;
+    border-radius: 10px;
+    border: 2px solid black;
+  }
+  .D_Quali{
+    margin-top: 15rem;
+  }
+  
+  .D_Profi{
+    margin-top: 6rem;
+  }
+
+  .D_Xp{
+    padding: 1rem;
+    margin-top: 6rem;
+  }
+
+  .D_Perso{
+    padding: 0.5rem;
+    margin-top: 6rem;
+  }
+
+  .Pro_D2{
+    border: 2px solid black;
+    min-width: none;
+    max-width: none;
+  }
+
+  .Pro_D3{
+    max-width: none;
+  }
+
+  .Pro_D4{
+    min-width: none;
+    max-width: none;
+  }
+
+  #Pro_Text{
+    font-size: 12px;
+  }
+
+  #Pro_Table td{
+    border: 2px solid var(--pal2-background-color);
+    padding: 2px;
+    text-align: left;
+    font-size: 0.6rem;
+  }
+
+  .Profi_D2_D_Text{
+    font-size: 10px;
+  }
+
+  .Perso_D2{
+    width: 400px;
+  }
+
+  .Perso_D2_D{
+    width: 150px;
   }
 
 }
