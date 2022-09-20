@@ -374,7 +374,6 @@
   .Pro_C{
     display: flex;
     font-size: 15px;
-    border: 1px solid black;
   }
 
   .Pro_D2{
@@ -725,11 +724,11 @@
   
 }
 
-@media only screen and (max-width:1924px){
+@media only screen and (max-width:550px){
  
 }
 
-@media only screen and (max-width:1024px){
+@media only screen and (max-width:450px){
   
   html{
     color: var(--pal2-background-color);
@@ -739,6 +738,16 @@
 
   body{
     font-family: 'Josefin Sans', sans-serif;
+  }
+
+  .Home_D1 img{
+    height: 2rem;
+    width: 2rem;
+  }
+
+  .Home_D2{
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
   }
 
   .content{
@@ -796,28 +805,27 @@
     justify-content: center;
   }
 
-  #Profi_D2_D{
-    width: 200px;
-  }
 
   .progressbar-wrapper {
     background-color: #bdc2c4;
     color: white;
     border-radius: 5px;
-    width: 100px;
+    width: 50px;
     height: 20px;
   }
 
   .Pro_C{
     display: flex;
     flex-direction: column;
-    width: 400px;
+    width: 350px;
+    align-items: center;
   }
 
   .D_Home{
     padding: 1rem;
     font-size: 14px;
     margin-top: 6rem;
+    margin-bottom: 9rem;
   }
 
   .D_Pro{
@@ -830,6 +838,7 @@
     background-color: var(--pal4-background-color);
     padding: 1rem 0rem 1rem 0rem;
     margin-top: 6rem;
+    margin-bottom: 5rem;
   }
 
   .Perso_D2{
@@ -864,35 +873,43 @@
   }
   .D_Quali{
     margin-top: 15rem;
+    margin-bottom: 15rem;
   }
   
   .D_Profi{
     margin-top: 6rem;
+    margin-bottom: 5rem;
+    padding: 0.5rem;
   }
 
   .D_Xp{
-    padding: 1rem;
+    padding: 0.5rem;
     margin-top: 6rem;
+    margin-bottom: 5rem;
   }
 
   .D_Perso{
     padding: 0.5rem;
     margin-top: 6rem;
+
   }
 
   .Pro_D2{
     border: 2px solid black;
     min-width: none;
-    max-width: none;
+    max-width: 300px;
+    height: 200px;
   }
 
   .Pro_D3{
-    max-width: none;
+    max-width: 300px;
+    height: 200px;
   }
 
   .Pro_D4{
     min-width: none;
-    max-width: none;
+    max-width: 300px;
+    height: 200px;
   }
 
   #Pro_Text{
@@ -907,15 +924,46 @@
   }
 
   .Profi_D2_D_Text{
-    font-size: 10px;
+    font-size: 8px;
   }
 
   .Perso_D2{
-    width: 400px;
+    width: 350px;
+    font-size: 18px;
   }
 
-  .Perso_D2_D{
-    width: 150px;
+  #Profi_D2_D{
+    width: 50px;
   }
+
+
+  .Perso_D2_D{
+    width: 120px;
+    align-items: center;
+  }
+
+  .Perso_C1{
+    font-size: 10px;
+    width: 80px;
+
+  }
+
+  .Profi_D1{
+    width: 300px;
+  }
+
+  .Perso_Tableau{
+    height: 30px;
+    font-size: 15px;
+  }
+
+  #Profi_D1_Pourcen{
+    font-size: 13px;
+  }
+
+  #D2_{
+    font-size: 10px;
+  }
+
 
 }
