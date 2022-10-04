@@ -6,23 +6,23 @@ $errors = [];
 $emails = ['lucas@barraille.com', 'contact@barraille.com', 'help@barraille.com'];
 
 if (!array_key_exists('name', $_POST) || $_POST['name'] == '') {
-    $errors['name'] = "Vous n'avez pas renseigné votre nom.";
+    $errors['name'] = "- Vous n'avez pas renseigné votre nom.";
 }
 
 if (!array_key_exists('email', $_POST) || $_POST['email'] == '') {
-    $errors['email'] = "Vous n'avez pas renseigné un email valide.";
+    $errors['email'] = "- Vous n'avez pas renseigné un email valide.";
 }
 
 if (!array_key_exists('body', $_POST) || $_POST['body'] == '') {
-    $errors['body'] = "Vous n'avez pas renseigné le sujet de votre message.";
+    $errors['body'] = "- Vous n'avez pas renseigné le sujet de votre message.";
 }
 
 if (!array_key_exists('message', $_POST) || $_POST['message'] == '') {
-    $errors['message'] = "Vous n'avez pas renseigné votre message.";
+    $errors['message'] = "- Vous n'avez pas renseigné votre message.";
 }
 
 if (!array_key_exists('service', $_POST) && !isset($emails[$_POST['service']])) {
-    $errors['service'] = "Le service que vous demandez n'existe pas.";
+    $errors['service'] = "- Le service que vous demandez n'existe pas.";
 }
 
 

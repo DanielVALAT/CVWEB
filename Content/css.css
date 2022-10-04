@@ -669,7 +669,8 @@
     flex-direction: column;
     background-color: #00000044;
     padding: 5vh;
-    border: 2px solid white;
+    border: 3px solid rgba(255, 255, 255, 0.377);
+    border-radius: 50px;
   }
 
   .Formu_Title {
@@ -679,15 +680,18 @@
 
   .Formu_Errors {
     border: 1px solid rgb(199, 199, 199);
-    width: 500px;
+    font-size: 20px;
     padding: 2vh;
     background-color: #ff101073;
+    width: fit-content;
+    border-radius: 10px;
+    color: #fff;
   }
 
   .Formu_Succes {
     border: 1px solid rgb(199, 199, 199);
-    width: 500px;
     padding: 2vh;
+    border-radius: 10px;
     background-color: #10ff1073;
   }
 
@@ -940,7 +944,7 @@
     #Pro_Text2 {
       height: auto;
       text-align: center;
-      font-size: 0.6rem;
+      font-size: 0.9rem;
       color: white;
     }
 
@@ -981,7 +985,7 @@
     #Pro_Text {
       height: auto;
       text-align: left;
-      font-size: 0.6rem;
+      font-size: 0.9rem;
       color: white;
     }
 
@@ -1080,7 +1084,7 @@
     }
 
     #D2_ {
-      font-size: 10px;
+      font-size: 15px;
     }
 
     .Profi_D2_D_Text {
@@ -1108,7 +1112,7 @@
 
     .Profi_D1 {
       width: fit-content;
-
+      font-size: 15px;
       border-radius: 10px;
       margin-left: auto;
       margin-right: auto;
@@ -1119,6 +1123,7 @@
 
     #Profi_D1_Pourcen {
       color: #ffffff;
+      font-size: 15px;
     }
 
     #Perso_Exp {
@@ -1152,20 +1157,20 @@
     }
 
     .Perso_D2_D {
-      width: 100px;
-      height: 300px;
+      width: 160px;
+      height: 200px;
     }
 
     .Perso_C1 {
       background-color: rgba(0, 0, 0, 0.329);
       border: 2px solid rgb(155, 117, 68);
       border-radius: 10px;
-      padding: 8px;
+      padding: 2px;
       margin: 1px;
       margin-bottom: 8px;
       text-align: center;
       color: white;
-      font-size: 8px;
+      font-size: 10px;
     }
 
     .Perso_D3 {
@@ -1215,9 +1220,9 @@
       transform: translate(-50%, -50%);
       color: white;
       display: flex;
-
+      border-radius: 10px;
       background-color: #00000044;
-      padding: 1vh;
+      padding: 2vh;
       border: 2px solid white;
     }
 
@@ -1229,9 +1234,9 @@
     .Formu_Errors {
       border: 1px solid rgb(199, 199, 199);
       width: 200px;
-      padding: 0.2vh;
+      padding: 1vh;
       background-color: #ff1010e1;
-      font-size: 6px;
+      font-size: 10px;
       z-index: 1;
     }
 
@@ -1239,6 +1244,7 @@
       border: 1px solid rgb(199, 199, 199);
       width: 200px;
       padding: 0.2vh;
+      font-size: 10px;
       background-color: #10ff1073;
     }
 
@@ -1290,8 +1296,8 @@
       display: flex;
       flex-direction: column;
       margin-top: 5px;
-      width: 50px;
-      font-size: 5px;
+      width: 80px;
+      font-size: 10px;
     }
 
     .Formu_D1_D6_D1 {
@@ -1300,7 +1306,7 @@
       background-color: #e17055;
       opacity: 1;
       transition: 1s;
-      font-size: 6px;
+      font-size: 12px;
     }
 
     .Formu_D1_D6_D1:hover {

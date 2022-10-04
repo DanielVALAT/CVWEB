@@ -112,7 +112,7 @@ session_start();
 	</div>
 
 </body>
-<div class="Back-nav2"><span> ©Copyright 2022 - Barraillé Lucas</span> Version 2.0.1</div>
+<div class="Back-nav2"><span> ©Copyright 2022 - Barraillé Lucas</span> Version 2.1.2</div>
 <?php
 unset($_SESSION['inputs']);
 unset($_SESSION['success']);
