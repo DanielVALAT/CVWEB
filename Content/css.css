@@ -54,7 +54,7 @@
     background-color: #6363637c;
     position: fixed;
     z-index: 1;
-    border: 1px solid rgb(121, 114, 103);
+    border-bottom: 1px solid rgb(121, 114, 103);
   }
 
   .nav_long {
@@ -745,6 +745,14 @@
       font-size: 20px;
     }
 
+    .Home_D4 {
+      font-size: 15px;
+    }
+
+    .Home_D5 {
+      font-size: 15px;
+    }
+
     .Presen_D1_D {
       font-size: 13px;
     }
@@ -880,7 +888,6 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-
       background-color: rgba(102, 51, 153, 0);
       padding: 0rem 0rem 0rem 0rem;
     }
@@ -908,7 +915,7 @@
     .nav_Small_Picture {
       position: absolute;
       margin-bottom: 40%;
-      border: 1px solid white;
+      border: 0px solid white;
       width: 100%;
       background-color: #8a8989;
     }
@@ -922,7 +929,7 @@
       justify-content: center;
       visibility: visible;
       background-color: #e6e6e67c;
-      border: 1px solid rgb(126, 118, 103);
+      border: 0px solid rgb(126, 118, 103);
       width: 100%;
       position: fixed;
       z-index: 1;
