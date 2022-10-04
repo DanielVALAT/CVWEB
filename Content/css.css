@@ -17,7 +17,7 @@
     --soixante: rgb(22, 152, 2);
     --quvin: blue;
     --centt: rgb(186, 0, 183);
-    --gradient: linear-gradient(215deg, #000000, rgba(0, 0, 0, 0.616));
+    --gradient: linear-gradient(250deg, #000000, rgb(59, 59, 59), rgb(80, 80, 80));
   }
 
   body {
@@ -55,6 +55,7 @@
     position: fixed;
     z-index: 1;
     border-bottom: 1px solid rgb(121, 114, 103);
+    backdrop-filter: blur(6px);
   }
 
   .nav_long {
@@ -73,7 +74,7 @@
     margin: 0 auto;
     width: 200px;
     text-align: center;
-    opacity: 0.2;
+    opacity: 1;
     transition: 1s;
     top: -20%;
   }
@@ -418,7 +419,7 @@
   }
 
   .Profi_Progress_1 {
-    background-color: rgb(201, 40, 0);
+    background-color: rgb(221, 88, 0);
     width: 60%;
   }
 
