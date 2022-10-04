@@ -1,7 +1,7 @@
   /* 
   CSS CVWEBLUCAS_
 
-  ©Copyright  2022  barraille.fr
+  ©Copyright  2022  Barraillé Lucas
   
   START_ROOT
  */
@@ -12,63 +12,26 @@
     --pal3-background-color: rgba(255, 255, 255, 0.24);
     --pal2-background-color: rgb(0, 0, 0);
     --pal1-background-color: rgb(255, 255, 255);
-    --navbar-background-color: rgb(151, 138, 129);
-    --navba-background-color: rgb(244, 225, 210);
-    --navbar-item-hovered-color: rgb(240, 160, 102);
-    --navbar-separator-color: rgb(80, 35, 0);
-    --navbar-icon-color: rgb(80, 35, 0);
-    --navbar-text-color: black;
-    --navbar-transition-speed: .2s;
-    --navbar-logo-background-color: #e2dfe4;
     --vin: #b8af00;
     --qua: #e17055;
     --soixante: rgb(22, 152, 2);
     --quvin: blue;
     --centt: rgb(186, 0, 183);
-  }
-
-  :root {
-    --gradient: linear-gradient(80deg, #13131381, rgba(41, 41, 41, 0.863));
-
+    --gradient: linear-gradient(215deg, #000000, rgba(0, 0, 0, 0.616));
   }
 
   body {
-    min-height: 100vh;
-    background-size: 200%;
+    min-height: 100%;
+    background-size: 300%;
     background-image: var(--gradient);
     animation: bg-animation 20s infinite;
-  }
-
-  @keyframes bg-animation {
-    0% {
-      background-position: left
-    }
-
-    50% {
-      background-position: right
-    }
-
-    100% {
-      background-position: left
-    }
-  }
-
-
-
-  html {
-    color: var(--pal2-background-color);
-    scroll-behavior: smooth;
-    color: var(--pal4-background-color);
-    scroll-behavior: smooth;
-    background: var(--pal5-background-color);
-
-  }
-
-  body {
     font-family: 'Josefin Sans', sans-serif;
     margin: 0px;
     width: auto;
+  }
 
+  html {
+    scroll-behavior: smooth;
   }
 
   .Title_ {
@@ -85,71 +48,26 @@
   START_NAVBAR
   */
 
-  .zzzz {
-    display: flex;
-    justify-content: center;
-
-  }
-
-  .test {
-    width: 70px;
+  .nav {
     height: 70px;
-  }
-
-
-  .test2 {
-    width: 70px;
-    height: 70px;
-    position: absolute;
-    left: 0%;
-  }
-
-  .IMG {
-    height: 50px;
-    width: 50px;
-    margin: 8px;
-  }
-
-  .IMG2 {
-    height: 50px;
-    width: 50px;
-    margin: 8px;
-  }
-
-  .IMG3 {
-    height: 50px;
-    width: 50px;
-    margin: 8px;
-  }
-
-  .DDDDDDD {
-    background-color: #6363637c;
-    border: 1px solid rgb(114, 110, 102);
     width: 100%;
+    background-color: #6363637c;
     position: fixed;
-    display: none;
-    visibility: hidden;
+    z-index: 1;
+    border: 1px solid rgb(121, 114, 103);
   }
 
-  .DDDDD {
+  .nav_long {
     display: flex;
     justify-content: center;
   }
 
-  .DDDDD a {
-    border: 1px solid transparent;
-    transition: 0.5s;
-    margin: 2px;
+  .nav_long_Logo {
+    width: 70px;
+    height: 70px;
   }
 
-  .DDDDD a:hover {
-    background-color: #ffbb00;
-    border-radius: 1rem;
-    border: 1px solid white;
-    transition: 1s;
-  }
-
-  .svg-wrapper {
+  .nav_long_svg-wrapper {
     position: relative;
     transform: translateY(-50%);
     margin: 0 auto;
@@ -160,7 +78,7 @@
     top: -20%;
   }
 
-  .shape {
+  .nav_long_shape {
     stroke-dasharray: 140 540;
     stroke-dashoffset: -474;
     stroke-width: 8px;
@@ -170,11 +88,11 @@
     transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
   }
 
-  .aaaaa {
+  .nav_long_lien {
     text-decoration: none;
   }
 
-  .text {
+  .nav_long_text {
     font-family: 'Roboto Condensed';
     font-size: 20px;
     line-height: 32px;
@@ -187,123 +105,69 @@
     margin-top: 1px;
   }
 
-  .svg-wrapper:hover {
+  .nav_long_svg-wrapper:hover {
     opacity: 1.5;
     transition: 1s;
     color: #ffffff;
   }
 
-  .svg-wrapper:hover .shape {
+  .nav_long_svg-wrapper:hover .nav_long_shape {
     stroke-width: 2px;
     stroke-dashoffset: 0;
     stroke-dasharray: 760;
-
   }
 
-  .nav {
+
+  .nav_Small_Logo {
+    width: 70px;
     height: 70px;
-    width: 100%;
+    position: absolute;
+    left: 0%;
+  }
+
+  .nav_Small {
     background-color: #6363637c;
+    border: 1px solid rgb(114, 110, 102);
+    width: 100%;
     position: fixed;
-    z-index: 1;
-    border: 1px solid rgb(121, 114, 103);
-
-  }
-
-  .nav>.nav-header {
-    display: inline;
-  }
-
-  .nav>.nav-header>.nav-title {
-    display: inline-block;
-    font-size: 22px;
-    color: #fff;
-    padding: 10px 10px 10px 10px;
-  }
-
-  .nav>.nav-btn {
     display: none;
+    visibility: hidden;
   }
 
-  .nav>.nav-links {
-    display: inline;
-    float: right;
-    font-size: 18px;
+  .nav_Small_Picture {
+    display: flex;
+    justify-content: center;
   }
 
-  .nav>.nav-links>a {
-    display: inline-block;
-    margin: 10px;
-    padding: 13px 10px 13px 10px;
-    text-decoration: none;
-    color: #efefef;
+  .nav_Small_Picture a {
     border: 1px solid transparent;
     transition: 0.5s;
+    margin: 2px;
   }
 
-  .nav>.nav-links>a:hover {
-    background-color: rgb(253, 114, 0);
-    border-radius: 10px;
+  .nav_Small_Picture a:hover {
+    background-color: #ffbb00;
+    border-radius: 1rem;
     border: 1px solid white;
     transition: 1s;
   }
 
-  .nav>#nav-check {
-    display: none;
+  .Nav_Small_P1 {
+    height: 50px;
+    width: 50px;
+    margin: 8px;
   }
 
-  @media (max-width:600px) {
-    .nav>.nav-btn {
-      display: inline-block;
-      position: absolute;
-      right: 0px;
-      top: 0px;
-    }
+  .Nav_Small_P2 {
+    height: 50px;
+    width: 50px;
+    margin: 8px;
+  }
 
-    .nav>.nav-btn>label {
-      display: inline-block;
-      width: 50px;
-      height: 50px;
-      padding: 13px;
-    }
-
-    .nav>.nav-btn>label:hover,
-    .nav #nav-check:checked~.nav-btn>label {
-      background-color: rgba(0, 0, 0, 0.3);
-    }
-
-    .nav>.nav-btn>label>span {
-      display: block;
-      width: 25px;
-      height: 10px;
-      border-top: 2px solid #eee;
-    }
-
-    .nav>.nav-links {
-      position: absolute;
-      display: block;
-      width: 100%;
-      background-color: #333;
-      height: 0px;
-      transition: all 0.3s ease-in;
-      overflow-y: hidden;
-      top: 50px;
-      left: 0px;
-    }
-
-    .nav>.nav-links>a {
-      display: block;
-      width: 100%;
-    }
-
-    .nav>#nav-check:not(:checked)~.nav-links {
-      height: 0px;
-    }
-
-    .nav>#nav-check:checked~.nav-links {
-      height: calc(100vh - 50px);
-      overflow-y: auto;
-    }
+  .Nav_Small_P3 {
+    height: 50px;
+    width: 50px;
+    margin: 8px;
   }
 
   /* 
@@ -361,15 +225,8 @@
   
 
   
-  START_QUALI
+  START_Presen
   */
-
-  #Presentation {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-
-  }
 
   .D_Presen {
     font-size: 25px;
@@ -395,163 +252,15 @@
   }
 
   /* 
-  END_QUALI
+  END_Presen
   
 
   
-  START_PROFI
+  START_Pro_Exp
   */
-
-  #Proficiency {
-    height: 100vh;
-    background-image: url(ezgif.com-gif-maker.gif);
-    background-position: center;
-  }
-
-  .D_Profi {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 1px solid rgb(255, 255, 255);
-    background-color: var(--pal4-background-color);
-    padding: 2rem 8rem 2rem 8rem;
-  }
-
-  .Profi_D2 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    max-width: 500px;
-  }
-
-  #Profi_D2_D {
-    padding: 10px;
-    max-width: fit-content;
-    color: #eee;
-  }
-
-  .progressbar-wrapper {
-    background-color: #bdc2c4;
-    color: white;
-    width: 100px;
-    height: 20px;
-  }
-
-  .DDDD {
-    position: absolute;
-    margin-bottom: 40%;
-  }
-
-  .D2_Profi {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 5vh;
-    font-size: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .Profi_D2_D_Text {
-    font-size: 16px;
-  }
-
-  #Profi_progess {
-    height: 20px;
-    font-size: 10px;
-  }
-
-  .p1 {
-    background-color: rgb(219, 106, 0);
-    width: 40%;
-  }
-
-  .p2 {
-    background-color: rgb(219, 106, 0);
-    width: 40%;
-  }
-
-  .p3 {
-    background-color: rgb(219, 106, 0);
-    width: 40%;
-  }
-
-  .p4 {
-    background-color: rgb(219, 106, 0);
-    width: 40%;
-  }
-
-  .p5 {
-    background-color: rgb(219, 0, 208);
-    width: 100%;
-  }
-
-  .p6 {
-    background-color: rgb(219, 106, 0);
-    width: 40%;
-  }
-
-  .p7 {
-    background-color: rgb(201, 40, 0);
-    width: 60%;
-  }
-
-  .p8 {
-    background-color: rgb(219, 106, 0);
-    width: 40%;
-  }
-
-  .p9 {
-    background-color: rgb(201, 40, 0);
-    width: 60%;
-  }
-
-  .p10 {
-    background-color: rgb(0, 95, 219);
-    width: 80%;
-  }
-
-  #Profi_progess p {
-    font-size: 10px;
-    color: white;
-    padding: 4px;
-  }
-
-  .Profi_D2_D1 {
-    font-size: 10px;
-  }
-
-  .Profi_D1 div {
-    padding: 5px;
-  }
-
-  .Profi_D1 {
-    width: fit-content;
-
-    border-radius: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 20px;
-
-    color: white
-  }
-
-  #Profi_D1_Pourcen {
-    color: #ffffff;
-  }
-
-  /* 
-  END_PROFI
-  
-
-  
-  START_PRO
-  */
-
 
   #Pro_Exp {
-    height: 120vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
     background-position: center;
@@ -649,18 +358,128 @@
     font-size: 1.4rem;
   }
 
+  .D_Profi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: var(--pal4-background-color);
+    padding: 2rem 8rem 2rem 8rem;
+    border-bottom: 1px solid beige;
+  }
+
+  .Profi_D2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 800px;
+  }
+
+  #Profi_progess p {
+    font-size: 10px;
+    color: white;
+    padding: 4px;
+  }
+
+  .Profi_D1 div {
+    padding: 4px;
+  }
+
+  .Profi_D1 {
+    width: fit-content;
+    border-radius: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 20px;
+    color: white;
+    font-size: 13px;
+  }
+
+  #Profi_D2_D {
+    padding: 10px;
+    max-width: fit-content;
+    color: #eee;
+  }
+
+  .Profi_D2_progressbar {
+    background-color: #bdc2c4;
+    color: white;
+    width: 100px;
+    height: 20px;
+  }
+
+  .Profi_D2_D_Text {
+    font-size: 16px;
+  }
+
+  #Profi_progess {
+    height: 20px;
+    font-size: 10px;
+  }
+
+  .Profi_Progress_1 {
+    background-color: rgb(201, 40, 0);
+    width: 60%;
+  }
+
+  .Profi_Progress_2 {
+    background-color: rgb(0, 95, 219);
+    width: 80%;
+  }
+
+  .Profi_Progress_3 {
+    background-color: rgb(201, 40, 0);
+    width: 60%;
+  }
+
+  .Profi_Progress_4 {
+    background-color: rgb(219, 106, 0);
+    width: 40%;
+  }
+
+  .Profi_Progress_5 {
+    background-color: rgb(219, 0, 208);
+    width: 100%;
+  }
+
+  .Profi_Progress_6 {
+    background-color: rgb(219, 106, 0);
+    width: 40%;
+  }
+
+  .Profi_Progress_7 {
+    background-color: rgb(201, 40, 0);
+    width: 60%;
+  }
+
+  .Profi_Progress_8 {
+    background-color: rgb(219, 106, 0);
+    width: 40%;
+  }
+
+  .Profi_Progress_9 {
+    background-color: rgb(201, 40, 0);
+    width: 60%;
+  }
+
+  .Profi_Progress_10 {
+    background-color: rgb(0, 95, 219);
+    width: 80%;
+  }
+
+
   /* 
-  END_PRO
+  END_Pro_Exp
   
   
   START_PERSO
   */
 
   #Perso_Exp {
-    height: 80vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
-
+    margin-top: 10%;
   }
 
   .D_Perso {
@@ -669,7 +488,7 @@
     align-items: center;
     border-radius: 10px;
     padding: 1rem;
-    max-width: 600px;
+    max-width: 800px;
 
   }
 
@@ -726,7 +545,7 @@
     border: 1px solid black;
   }
 
-  .Zerty {
+  .Back-nav {
     width: 98%;
     background-color: #424242;
     border-top: 2px solid white;
@@ -737,7 +556,7 @@
 
   }
 
-  .Zerty span {
+  .Back-nav span {
     color: #b66b16;
     margin-top: 4px;
   }
@@ -783,7 +602,7 @@
     animation-delay: 4s;
   }
 
-  .ZZZZZ button {
+  .index_Welcome button {
     z-index: 1;
     position: absolute;
     top: 60%;
@@ -796,13 +615,13 @@
     transition: 0.5s;
   }
 
-  .ZZZZZ a {
+  .index_Welcome a {
     text-decoration: none;
     color: white;
     font-size: 18px;
   }
 
-  .ZZZZZ button:hover {
+  .index_Welcome button:hover {
     background-color: #ebcfa0;
     transition: 1s;
     opacity: 0.5;
@@ -881,6 +700,22 @@
 
   }
 
+  @keyframes bg-animation {
+    0% {
+      background-position: left
+    }
+
+    50% {
+      background-position: right
+    }
+
+    100% {
+      background-position: left
+    }
+  }
+
+  /* END_Other
+
 
   /* 
   
@@ -891,90 +726,27 @@
 
   /*RESPOSIVE*/
 
+  @media only screen and (max-height:1000px) {}
 
-  @media only screen and (max-width:500px) {
+
+  @media only screen and (max-width:800px) {
+
+    body {
+      background-image: linear-gradient(215deg, #000000, rgba(124, 124, 124, 0.616));
+    }
 
     #Home {
       height: 100vh;
-      background-image: url(ezgif.com-gif-maker.gif);
       background-position: center;
       flex-direction: column;
     }
 
-    .D_Home {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-top: -10%;
-      color: white;
-      padding: 10px;
-      font-size: 15px;
-      border-radius: 10px;
-
-    }
-
-    .Home_D4_D1 {
-      margin-top: 10px;
-      margin-bottom: 20px;
-    }
-
     .Home_D2 {
-      margin-bottom: 1rem;
       font-size: 20px;
     }
 
-
-    #Presentation {
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-
-    }
-
-    .D_Presen {
-      font-size: 10px;
-      color: #f8c67c80;
-      text-align: right;
-      border-top: 1px solid rgb(255, 255, 255);
-      padding-left: 10px;
-      padding-right: 10px;
-      padding-top: 1px;
-      border-radius: 15px;
-      position: absolute;
-      bottom: 4%;
-      left: 5%;
-    }
-
     .Presen_D1_D {
-      font-size: 18px;
-    }
-
-    .Presen_D1_D2 {
-      text-align: left;
-      color: white;
-    }
-
-
-    .content {
-      align-items: center;
-    }
-
-    section {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-
-    .DDDDDDD {
-      display: flex;
-      justify-content: center;
-      visibility: visible;
-      background-color: #6363637c;
-      border: 1px solid rgb(126, 118, 103);
-      width: 100%;
-      position: fixed;
-
+      font-size: 13px;
     }
 
     .nav {
@@ -982,18 +754,14 @@
       visibility: hidden;
     }
 
-    .section {
-      margin-top: 100vh;
-    }
-
     .D_Presen {
-      font-size: 15px;
+      font-size: 12px;
       color: #f8c67c80;
       text-align: right;
       border-top: 1px solid rgb(255, 255, 255);
-      padding-left: 50px;
-      padding-right: 50px;
-      padding-top: 50px;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 18px;
       border-radius: 15px;
       position: absolute;
       bottom: 4%;
@@ -1001,7 +769,7 @@
     }
 
     #Pro_Exp {
-      height: 200vh;
+      height: 100%;
       display: flex;
       flex-direction: column;
       background-position: center;
@@ -1053,7 +821,6 @@
       font-size: 8px;
     }
 
-
     .Pro_D4_D3_D1 {
       font-size: 8px;
     }
@@ -1061,7 +828,6 @@
     .Pro_D4 {
       margin: 10px;
       padding: 8px;
-
       background-color: var(--pal4-background-color);
       max-width: 1000px;
       min-height: 150px;
@@ -1105,23 +871,16 @@
       font-size: 1.4rem;
     }
 
-    #scrollUp {}
-
-    .Zerty {
+    .Back-nav {
       font-size: 10px;
     }
 
-    #Proficiency {
-      height: 100vh;
-      background-image: url(ezgif.com-gif-maker.gif);
-      background-position: center;
-    }
 
     .D_Profi {
       display: flex;
       flex-direction: column;
       align-items: center;
-      border: 0px solid rgb(255, 255, 255);
+
       background-color: rgba(102, 51, 153, 0);
       padding: 0rem 0rem 0rem 0rem;
     }
@@ -1139,16 +898,34 @@
       color: #eee;
     }
 
-    .progressbar-wrapper {
+    .Profi_D2_progressbar {
       background-color: #bdc2c4;
       color: white;
       width: 80px;
       height: 16px;
     }
 
-    .DDDD {
+    .nav_Small_Picture {
       position: absolute;
       margin-bottom: 40%;
+      border: 1px solid white;
+      width: 100%;
+      background-color: #8a8989;
+    }
+
+    .nav_Small_Logo {
+      z-index: 1;
+    }
+
+    .nav_Small {
+      display: flex;
+      justify-content: center;
+      visibility: visible;
+      background-color: #e6e6e67c;
+      border: 1px solid rgb(126, 118, 103);
+      width: 100%;
+      position: fixed;
+      z-index: 1;
     }
 
     .D2_Profi {
@@ -1177,56 +954,6 @@
     #Profi_progess {
       height: 16px;
       font-size: 10px;
-    }
-
-    .p1 {
-      background-color: rgb(219, 106, 0);
-      width: 40%;
-    }
-
-    .p2 {
-      background-color: rgb(219, 106, 0);
-      width: 40%;
-    }
-
-    .p3 {
-      background-color: rgb(219, 106, 0);
-      width: 40%;
-    }
-
-    .p4 {
-      background-color: rgb(219, 106, 0);
-      width: 40%;
-    }
-
-    .p5 {
-      background-color: rgb(219, 0, 208);
-      width: 100%;
-    }
-
-    .p6 {
-      background-color: rgb(219, 106, 0);
-      width: 40%;
-    }
-
-    .p7 {
-      background-color: rgb(201, 40, 0);
-      width: 60%;
-    }
-
-    .p8 {
-      background-color: rgb(219, 106, 0);
-      width: 40%;
-    }
-
-    .p9 {
-      background-color: rgb(201, 40, 0);
-      width: 60%;
-    }
-
-    .p10 {
-      background-color: rgb(0, 95, 219);
-      width: 80%;
     }
 
     #Profi_progess p {
@@ -1259,7 +986,7 @@
     }
 
     #Perso_Exp {
-      height: 100vh;
+      height: 100%;
       display: flex;
       flex-direction: column;
       margin-top: 25vh;
@@ -1284,27 +1011,22 @@
     }
 
     .Perso_Tableau {
-      text-align: center;
-      height: 20px;
-      padding: 10px;
-      color: white;
+      font-size: 12px;
+      margin-bottom: 10px;
     }
 
     .Perso_D2_D {
-      padding: 10px;
-      border: 2px solid var(--pal2-background-color);
-      background-color: rgba(179, 179, 179, 0.596);
       width: 100px;
-      margin: 5px;
-      height: 200px;
+      height: 300px;
     }
 
     .Perso_C1 {
       background-color: rgba(0, 0, 0, 0.329);
       border: 2px solid rgb(155, 117, 68);
       border-radius: 10px;
-      padding: 5px;
-      margin: 10px;
+      padding: 8px;
+      margin: 1px;
+      margin-bottom: 8px;
       text-align: center;
       color: white;
       font-size: 8px;
@@ -1333,7 +1055,7 @@
       font-size: 12px;
     }
 
-    .Zerty {
+    .Back-nav {
       width: 98%;
       background-color: #424242;
       border-top: 2px solid white;
@@ -1344,7 +1066,7 @@
 
     }
 
-    .Zerty span {
+    .Back-nav span {
       color: #b66b16;
       margin-top: 4px;
       font-size: 10px;
