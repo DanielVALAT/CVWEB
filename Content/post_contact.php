@@ -35,7 +35,7 @@ if (!empty($errors)) {
 } else {
     $_SESSION['success'] = 1;
     $headers = 'FROM:' . $_POST['email'];
-    mail($emails[$_POST['service']], 'Formulaire de contact de' . $_POST['name'], $_POST['message'], $headers);
+    mail($emails[$_POST['service']], 'Formulaire de contact de ' . $_POST['name'], $_POST['message'], $headers);
     header('Location: index.php');
 }
 

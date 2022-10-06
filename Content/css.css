@@ -7,11 +7,12 @@
  */
 
   :root {
-    --pal5-background-color: rgba(0, 0, 0, 0.918);
-    --pal4-background-color: rgba(126, 126, 126, 0.123);
-    --pal3-background-color: rgba(255, 255, 255, 0.24);
-    --pal2-background-color: rgb(0, 0, 0);
+    --pal5-background-color: rgb(0, 0, 0);
+    --pal4-background-color: rgba(0, 0, 0, 0.527);
+    --pal3-background-color: #6363637c;
+    --pal2-background-color: rgba(126, 126, 126, 0.623);
     --pal1-background-color: rgb(255, 255, 255);
+    --color1: #f8c67c80;
     --vin: #b8af00;
     --qua: #e17055;
     --soixante: rgb(22, 152, 2);
@@ -49,9 +50,9 @@
   */
 
   .nav {
-    height: 70px;
+    height: 4.375rem;
     width: 100%;
-    background-color: #6363637c;
+    background-color: var(--pal3-background-color);
     position: fixed;
     z-index: 1;
     border-bottom: 1px solid rgb(121, 114, 103);
@@ -65,9 +66,8 @@
   }
 
   .nav_long_Logo {
-    width: 70px;
-    height: 70px;
-
+    width: 4rem;
+    height: 100%;
   }
 
   .nav_long_svg-wrapper {
@@ -98,12 +98,12 @@
 
   .nav_long_text {
     font-family: 'Roboto Condensed';
-    font-size: 20px;
+    font-size: 1.2rem;
     line-height: 32px;
     letter-spacing: 8px;
     padding-left: 10px;
     color: #fff;
-    top: -48px;
+    top: -46px;
     position: relative;
     text-decoration: none;
     margin-top: 1px;
@@ -138,15 +138,16 @@
 
 
   .nav_Small_Logo {
-    width: 70px;
-    height: 70px;
+    width: 2.5rem;
+    height: 100%;
     position: absolute;
     left: 0%;
   }
 
   .nav_Small {
-    background-color: #6363637c;
-    border: 1px solid rgb(114, 110, 102);
+    background-color: var(--pal3-background-color);
+    border-bottom: 1px solid rgb(121, 114, 103);
+    height: 4.375rem;
     width: 100%;
     position: fixed;
     display: none;
@@ -156,37 +157,38 @@
   .nav_Small_Picture {
     display: flex;
     justify-content: center;
+    height: 100%;
+    align-items: center;
   }
 
   .nav_Small_Picture a {
     border: 1px solid transparent;
     transition: 0.5s;
-    margin: 2px;
+    margin: 5%;
+    align-items: center;
+    display: flex;
   }
 
   .nav_Small_Picture a:hover {
-    background-color: #ffbb00;
-    border-radius: 1rem;
-    border: 1px solid white;
+    background-color: #91793f93;
+    border-radius: 0.3rem;
+    border: 0.5px solid rgba(255, 255, 255, 0.596);
     transition: 1s;
   }
 
   .Nav_Small_P1 {
-    height: 50px;
-    width: 50px;
-    margin: 8px;
+    height: 1.8rem;
+    width: 1.8rem;
   }
 
   .Nav_Small_P2 {
-    height: 50px;
-    width: 50px;
-    margin: 8px;
+    height: 1.8rem;
+    width: 1.8rem;
   }
 
   .Nav_Small_P3 {
-    height: 50px;
-    width: 50px;
-    margin: 8px;
+    height: 1.8rem;
+    width: 1.8rem;
   }
 
   /* 
@@ -248,21 +250,19 @@
   */
 
   .D_Presen {
-    font-size: 25px;
-    color: #f8c67c80;
-    text-align: right;
-    border-top: 1px solid rgb(255, 255, 255);
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-top: 50px;
-    border-radius: 15px;
     position: absolute;
-    bottom: 4%;
-    left: 5%;
+    font-size: 1.5rem;
+    color: var(--color1);
+    border-bottom: 1px solid rgb(255, 255, 255);
+    bottom: 1rem;
+    left: 1rem;
+    padding: 0.8rem;
   }
 
+  .Presen_D1 {}
+
   .Presen_D1_D {
-    font-size: 30px;
+    text-align: right;
   }
 
   .Presen_D1_D2 {
@@ -283,31 +283,23 @@
     display: flex;
     flex-direction: column;
     background-position: center;
-
+    width: 100%;
   }
 
   .D_Pro {
     display: flex;
     align-items: center;
     flex-direction: column;
-    border-radius: 10px;
-    padding: 5rem;
-
   }
 
   .Pro_C {
     display: flex;
     flex-direction: column;
-    font-size: 15px;
   }
 
   .Pro_D2 {
-    margin: 10px;
-    padding: 8px;
     background-color: var(--pal4-background-color);
-    max-width: 1000px;
-    min-height: 100px;
-    border: 1px solid rgb(255, 255, 255);
+    border: 0.5px solid rgba(255, 255, 255, 0.596);
   }
 
   #Pro_Text2 {
@@ -318,12 +310,8 @@
   }
 
   .Pro_D3 {
-    margin: 10px;
-    padding: 8px;
     background-color: var(--pal4-background-color);
-    max-width: 1000px;
-    min-height: 150px;
-    border: 1px solid rgb(255, 255, 255);
+    border: 0.5px solid rgba(255, 255, 255, 0.596);
   }
 
   #Pro_Title_M {
@@ -331,13 +319,8 @@
   }
 
   .Pro_D4 {
-    margin: 10px;
-    padding: 8px;
-
     background-color: var(--pal4-background-color);
-    max-width: 1000px;
-    min-height: 150px;
-    border: 1px solid rgb(255, 255, 255);
+    border: 0.5px solid rgba(255, 255, 255, 0.596);
   }
 
   #Pro_Title {
@@ -442,8 +425,8 @@
   }
 
   .Profi_Progress_2 {
-    background-color: rgb(0, 95, 219);
-    width: 80%;
+    background-color: rgb(201, 40, 0);
+    width: 60%;
   }
 
   .Profi_Progress_3 {
@@ -875,20 +858,26 @@
     }
 
     .Home_D2 {
-      font-size: 20px;
+      font-size: 1.2rem;
     }
 
     .Home_D4 {
-      font-size: 15px;
+      font-size: 0.8rem;
     }
 
     .Home_D5 {
-      font-size: 15px;
+      font-size: 0.8rem;
+      text-align: center;
     }
 
     .Presen_D1_D {
-      font-size: 13px;
+      font-size: 0.8rem;
     }
+
+    .Presen_D1_D2 {
+      font-size: 0.6rem;
+    }
+
 
     .nav {
       display: none;
@@ -899,11 +888,9 @@
       font-size: 12px;
       color: #f8c67c80;
       text-align: right;
-      border-top: 1px solid rgb(255, 255, 255);
       padding-left: 20px;
       padding-right: 20px;
       padding-top: 18px;
-      border-radius: 15px;
       position: absolute;
       bottom: 4%;
       left: 5%;
@@ -1050,7 +1037,6 @@
       margin-bottom: 40%;
       border: 0px solid white;
       width: 100%;
-      background-color: #8a8989;
     }
 
     .nav_Small_Logo {
@@ -1061,22 +1047,15 @@
       display: flex;
       justify-content: center;
       visibility: visible;
-      background-color: #e6e6e67c;
-      border: 0px solid rgb(126, 118, 103);
       width: 100%;
       position: fixed;
       z-index: 1;
+      height: 2.8rem;
     }
 
     .D2_Profi {
       display: flex;
       flex-direction: column;
-      margin-bottom: 5vh;
-      font-size: 10px;
-      padding-left: 20px;
-      padding-right: 20px;
-      margin-left: auto;
-      margin-right: auto;
     }
 
     #Profi_D1_Pourcen {
