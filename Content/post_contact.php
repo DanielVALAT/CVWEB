@@ -1,32 +1,27 @@
 <?php
-
-
-
+session_start();
 $errors = [];
 $emails = ['lucas@barraille.com', 'contact@barraille.com', 'help@barraille.com'];
 
 if (!array_key_exists('name', $_POST) || $_POST['name'] == '') {
-    $errors['name'] = "- Vous n'avez pas renseigné votre nom.";
+    $errors['name'] = '<div class="Formu_errors1">You have not provided your name.</div>';
 }
 
 if (!array_key_exists('email', $_POST) || $_POST['email'] == '') {
-    $errors['email'] = "- Vous n'avez pas renseigné un email valide.";
+    $errors['email'] = '<div class="Formu_errors2">You have not entered a valid email.</div>';
+}
+
+if (!array_key_exists('service', $_POST) || !isset($emails[$_POST['service']])) {
+    $errors['service'] = '<div class="Formu_errors3">The service you are requesting does not exist.</div>';
 }
 
 if (!array_key_exists('body', $_POST) || $_POST['body'] == '') {
-    $errors['body'] = "- Vous n'avez pas renseigné le sujet de votre message.";
+    $errors['body'] = '<div class="Formu_errors4">You have not entered the subject of your message.</div>';
 }
 
 if (!array_key_exists('message', $_POST) || $_POST['message'] == '') {
-    $errors['message'] = "- Vous n'avez pas renseigné votre message.";
+    $errors['message'] = '<div class="Formu_errors5">You have not entered your message.</div>';
 }
-
-if (!array_key_exists('service', $_POST) && !isset($emails[$_POST['service']])) {
-    $errors['service'] = "- Le service que vous demandez n'existe pas.";
-}
-
-
-session_start();
 
 if (!empty($errors)) {
     $_SESSION['errors'] = $errors;

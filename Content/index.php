@@ -76,6 +76,7 @@ session_start();
 				<div class="Formu_D1_D3">
 					<label class="" for="inputservice">Service</label>
 					<select class="" name="service" id="inputservice">
+						<option value="">Please select</option>
 						<option value="0">Personal contact</option>
 						<option value="1">Commercial contact</option>
 						<option value="2">Service contact</option>
@@ -106,7 +107,7 @@ session_start();
 		endif; ?>
 		<?php if (array_key_exists('success', $_SESSION)) : ?>
 			<div class="Formu_Succes">
-				Votre email nous a bien été parvenu.
+				Your email has been sent to us.
 			</div>
 		<?php endif; ?>
 	</div>
